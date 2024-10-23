@@ -11,30 +11,40 @@ import VibeConnectFooter from "./VibeConnectFooter";
 import ProfileCard2 from "./ProfileCard2";
 import VibePage5 from "./VibePage5";
 
-
 const Layout = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
 
   // Array of page components
-  const pages = [<VibePage3/>,<VibePage4/>,<VibePage2/>,<ProfilesPage/>,<VibePage/>,<ProfileCard/>,<VibePage1/>,<ProfileCard1/>,<VibePage5/>,<ProfileCard2/> /* Add other pages here like <Page3 /> */];
+  const pages = [
+    <VibePage3 />,
+    <VibePage4 />,
+    <VibePage2 />,
+    <ProfilesPage />,
+    <VibePage />,
+    <ProfileCard />,
+    <VibePage1 />,
+    <ProfileCard1 />,
+    <VibePage5 />,
+    <ProfileCard2 />,
+  ];
 
-  // Function to handle smooth scrolling to a specific page
   const scrollToPage = (index) => {
     setCurrentPage(index);
     const pageElement = document.getElementById(`page-${index}`);
     if (pageElement) {
       pageElement.scrollIntoView({ behavior: "smooth" });
-      setIsScrolling(true); // Prevent interference with manual scroll
-      setTimeout(() => setIsScrolling(false), 1000); // Allow time for smooth scroll to complete
+      setIsScrolling(true);
+      setTimeout(() => setIsScrolling(false), 1000);
     }
   };
 
-  // Function to detect the current page based on the scroll position
   const handleScroll = () => {
     if (isScrolling) return; // Don't update during smooth scroll
 
-    const sections = pages.map((_, index) => document.getElementById(`page-${index}`));
+    const sections = pages.map((_, index) =>
+      document.getElementById(`page-${index}`)
+    );
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
     // Find the current section in view
@@ -61,13 +71,15 @@ const Layout = () => {
   return (
     <div className="relative h-screen">
       {/* Fixed dots navigation */}
-      <div className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 border p-1 border-black rounded-full">
+      <div className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50  p-2  bg-black bg-opacity-30 rounded-full">
         {pages.map((_, index) => (
           <div
             key={index}
             onClick={() => scrollToPage(index)}
-            className={`w-3 h-3  my-2 rounded-full  cursor-pointer ${
-              currentPage === index ? "bg-blue-500" : "bg-gray-400"
+            className={`w-3 h-3 my-2 p-1 rounded-full cursor-pointer ${
+              currentPage === index
+                ? "bg-black border-white border-4 p-1"
+                : "bg-white p-1 border-4 border-black border-opacity-80"
             }`}
           />
         ))}

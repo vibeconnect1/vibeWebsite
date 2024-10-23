@@ -29,7 +29,7 @@ const VibeConnectPage = () => {
           controls.start("hidden");
         }
       },
-      { threshold: 0.2 } // Trigger when 20% of the element is visible
+      { threshold: 0.2 }
     );
 
     if (ref.current) {
@@ -53,9 +53,7 @@ const VibeConnectPage = () => {
   return (
     <div className="flex flex-col ">
       <VibePage3 />
-
       <VibePage2 />
-
       <ProfilesPage />
       <VibePage />
       <ProfileCard />

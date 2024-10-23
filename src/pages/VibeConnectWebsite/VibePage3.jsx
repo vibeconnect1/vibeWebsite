@@ -300,7 +300,7 @@ const VibePage3 = () => {
           />
         </a> */}
         <a
-          href="https://www.instagram.com/yourprofile"
+          href="https://www.instagram.com/vibecopilot/"
           target="_blank"
           rel="noopener noreferrer"
         >

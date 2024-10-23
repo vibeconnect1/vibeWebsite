@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
-import './App.css'
+import "./App.css";
 import Layout from "./pages/VibeConnectWebsite/Layout.jsx";
 import PersonalFinancialWebsite from "./pages/VibeConnectWebsite/PersonalFinancialWebsite.jsx";
 import ProjectManagementWebsite from "./pages/VibeConnectWebsite/ProjectManagementWebsite.jsx";
@@ -34,181 +34,50 @@ import AdvanceSalaryWebPage from "./pages/VibeConnectWebsite/AdvanceSalaryWebsit
 function App() {
   return (
     <Router>
-    <Routes>
-    {/* <Route path="/login" element={<Login />} /> */}
-          <Route path="/home" element={<Layout/>} />
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route
-            path="/Personal-Financial-website"
-            element={
-            
-              <PersonalFinancialWebsite/>
-            }
-          />
-           <Route
-            path="/Project-Management-website"
-            element={
-            
-              <ProjectManagementWebsite/>
-            }
-          />
-           <Route
-            path="/Suppliers-website"
-            element={
-            
-              <SuppliersWebsite/>
-            }
-          />
-          <Route
-            path="/HRMS-website"
-            element={
-            
-              <HRMSWebsite/>
-            }
-          />
-           <Route
-            path="/AboutUs-website"
-            element={
-            
-             <AboutUs/>
-            }
-          />
-           <Route
-            path="/Contact-website"
-            element={
-            
-            <ContactForm/>
-            }
-          />
-           <Route
-            path="/KnowMore-page"
-            element={
-            
-            <KnowMorePage/>
-            }
-          />
-           <Route
-            path="/KnowMore-page1"
-            element={
-            
-            <KnowMorePage1/>
-            }
-          />
-          <Route
-            path="/KnowMore-page2"
-            element={
-            
-           <KnowMorePage2/>
-            }
-          />
-          <Route
-            path="/KnowMore-page3"
-            element={
-            
-           <KnowMorePage3/>
-            }
-          />
-        
+      <Routes>
+        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/home" element={<Layout />} />
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route
-            path="/Purchase-website"
-            element={
-            
-           <PurchaseWebsite/>
-            }
-          />
-          <Route
-            path="/billpay-website"
-            element={
-            
-           <BillPayWebPage/>
-            }
-          />
-          <Route
-            path="/audit-website"
-            element={
-            
-           <AuditWebPage/>
-            }
-          />
-           <Route
-            path="/insurance-website"
-            element={
-            
-           <InsuranceWebPage/>
-            }
-          />
-          <Route
-            path="/communication-website"
-            element={
-            
-           <CommunicationWebsite/>
-            }
-          />
-          <Route
-            path="/fitness-website"
-            element={
-            
-           <FitnessWebPage/>
-            }
-          />
-          <Route
-            path="/skill-Grow-website"
-            element={
-            
-           <SkillGrowWebPage/>
-            }
-          />
-          <Route
-            path="/Asset-website"
-            element={
-           <AssetWebPage/>
-            }
-          />
-          <Route
-            path="/SoftServices-website"
-            element={
-           <SoftServicesWebPage/>
-            }
-          />
-          <Route
-            path="/Passes-website"
-            element={
-           <PassesWebPage/>
-            }
-          />
-          <Route
-            path="/FAQ"
-            element={
-           <FAQ/>
-            }
-          />
-          <Route
-            path="/calendar-website"
-            element={
-           <CalendarWebPage/>
-            }
-          />
-          <Route
-            path="/billpay-website"
-            element={
-           <BillPayWebPage/>
-            }
-          />
-          <Route
-            path="/birthday-website"
-            element={
-           <BirthdayWebPage/>
-            }
-          />
-          <Route
-            path="/advance-salary-website"
-            element={
-           <AdvanceSalaryWebPage/>
-            }
-          />
-    </Routes>
-  </Router>
-  )
+          path="/Personal-Financial-website"
+          element={<PersonalFinancialWebsite />}
+        />
+        <Route
+          path="/Project-Management-website"
+          element={<ProjectManagementWebsite />}
+        />
+        <Route path="/Suppliers-website" element={<SuppliersWebsite />} />
+        <Route path="/HRMS-website" element={<HRMSWebsite />} />
+        <Route path="/AboutUs-website" element={<AboutUs />} />
+        <Route path="/Contact-us" element={<ContactForm />} />
+        <Route path="/KnowMore-page" element={<KnowMorePage />} />
+        <Route path="/KnowMore-page1" element={<KnowMorePage1 />} />
+        <Route path="/KnowMore-page2" element={<KnowMorePage2 />} />
+        <Route path="/KnowMore-page3" element={<KnowMorePage3 />} />
+        <Route path="/Purchase-website" element={<PurchaseWebsite />} />
+        <Route path="/billpay-website" element={<BillPayWebPage />} />
+        <Route path="/audit-website" element={<AuditWebPage />} />
+        <Route path="/insurance-website" element={<InsuranceWebPage />} />
+        <Route
+          path="/communication-website"
+          element={<CommunicationWebsite />}
+        />
+        <Route path="/fitness-website" element={<FitnessWebPage />} />
+        <Route path="/skill-Grow-website" element={<SkillGrowWebPage />} />
+        <Route path="/Asset-website" element={<AssetWebPage />} />
+        <Route path="/SoftServices-website" element={<SoftServicesWebPage />} />
+        <Route path="/Passes-website" element={<PassesWebPage />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/calendar-website" element={<CalendarWebPage />} />
+        <Route path="/billpay-website" element={<BillPayWebPage />} />
+        <Route path="/birthday-website" element={<BirthdayWebPage />} />
+        <Route
+          path="/advance-salary-website"
+          element={<AdvanceSalaryWebPage />}
+        />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

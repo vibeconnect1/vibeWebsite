@@ -193,7 +193,7 @@ const VibeConnectNavbar1 = () => {
                 </div>
                 <p className={`font-bold ${textColor} z-10`}><Link to="/AboutUs-website">About us</Link></p>
                 <p className={`font-bold ${textColor} z-10`}>
-                  <Link to="/Contact-website">Contact</Link>
+                  <Link to="/Contact-us">Contact</Link>
                 </p>
               </div>
                 <button onClick={openSignInModal} className={`font-bold ${textColor} px-4 py-2  rounded-md mr-4 z-10 bg-blue-600 text-white  rounded-full hover:bg-blue-500`}>
