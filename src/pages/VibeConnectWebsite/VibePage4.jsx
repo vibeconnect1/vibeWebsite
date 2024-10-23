@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-
+import React, { useEffect, useState, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import purpleWhite from "/purpleWhite.png"
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
@@ -15,9 +15,9 @@ const VibePage4 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          controls.start('visible');
+          controls.start("visible");
         } else {
-          controls.start('hidden');
+          controls.start("hidden");
         }
       },
       { threshold: 0.2 } // Trigger when 20% of the element is visible
@@ -48,7 +48,8 @@ const VibePage4 = () => {
       <div
         className="absolute inset-0 bg-no-repeat bg-cover"
         style={{
-          backgroundImage: `url('https://reshapecxm.com/adobe-reshaping-cxm/media/2c5df09ef1befcf004190799229bb34c/introbackground-full.png')`,
+          backgroundImage: `url(${purpleWhite})`,
+         
         }}
       ></div>
 
@@ -59,7 +60,7 @@ const VibePage4 = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: "easeOut" }}
             ref={ref}
           >
             {/* For most of history, customer experiences lived in the two-dimensional realm. */}
@@ -69,7 +70,7 @@ const VibePage4 = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             ref={ref}
           >
             {/* Point A to Point B. The path to making a purchase was predictably linear, finite, and well traveled. */}
@@ -79,16 +80,26 @@ const VibePage4 = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1.4, ease: 'easeOut' }}
+            transition={{ duration: 1.4, ease: "easeOut" }}
             ref={ref}
           >
-Vibe Connect is a comprehensive Workspace 2.0 platform designed to optimize business operations with its all-in-one unified business tool. Our solution includes a wide range of modules, such as workspace management, facility management, HRMS, service desk, project management, and advanced communication tools. With a focus on scalability and flexibility, Vibe Connect enables businesses to streamline processes, improve collaboration, and drive growth without the need for significant upfront investments. Discover how Vibe Connect can transform your business into a more efficient and connected workspace.          </motion.p>
+            Vibe Connect is a comprehensive Workspace 2.0 platform designed to
+            optimize business operations with its all-in-one unified business
+            tool. Our solution includes a wide range of modules, such as
+            workspace management, facility management, HRMS, service desk,
+            project management, and advanced communication tools. With a focus
+            on scalability and flexibility, Vibe Connect enables businesses to
+            streamline processes, improve collaboration, and drive growth
+            without the need for significant upfront investments. Discover how
+            Vibe Connect can transform your business into a more efficient and
+            connected workspace.{" "}
+          </motion.p>
           <motion.p
             className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4"
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1.6, ease: 'easeOut' }}
+            transition={{ duration: 1.6, ease: "easeOut" }}
             ref={ref}
           >
             {/* Join us as we enlist some of the most forward-thinking minds in business, and share their views on what it takes to deliver a comprehensive, holistic, unforgettable customer experience. */}

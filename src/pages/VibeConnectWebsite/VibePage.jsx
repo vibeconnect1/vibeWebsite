@@ -97,7 +97,7 @@ const VibePage = () => {
             <div className='flex flex-col items-center gap-2 md:relative  ml-0 md:ml-10'>
               <CircularProgress percentage={86} />
               <div>
-                <p className="text-center text-sm md:text-lg text-justify">
+                <p className=" text-sm md:text-lg text-justify">
                 of professionals use multiple platforms for daily tasks,
                   <br />
                     but Vibe Connect unifies  everything into one seamless

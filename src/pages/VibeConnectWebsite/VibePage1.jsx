@@ -1,16 +1,17 @@
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import CircularProgress from './CircularProgress';
-
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+import CircularProgress from "./CircularProgress";
+import mansitting from "../../siteAssets/mansitting.png";
+// import mansitting from "/mansitting.png"
 // Variants for animation
 const textVariants = {
   hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0 }
+  visible: { opacity: 1, x: 0 },
 };
 
 const circleVariants = {
   hidden: { scale: 0, opacity: 0 },
-  visible: { scale: 1, opacity: 1 }
+  visible: { scale: 1, opacity: 1 },
 };
 
 const VibePage1 = () => {
@@ -62,8 +63,7 @@ const VibePage1 = () => {
     <div
       className="relative bottom-6 flex min-h-screen items-center justify-center bg-cover "
       style={{
-        backgroundImage:
-          "url('https://reshapecxm.com/adobe-reshaping-cxm/media/fa2cea2b1a0d5d3f55dfc98d8b37d59b/section3-full.png')",
+        backgroundImage: `url(${mansitting})`,
       }}
     >
       <div className="relative flex flex-col md:flex-row md:items-center md:justify-between text-white w-full">
@@ -74,7 +74,7 @@ const VibePage1 = () => {
           initial="hidden"
           animate={textControls}
           variants={textVariants}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
           <h1 className="text-3xl md:text-5xl font-bold mb-6">
             UNIQUE &
@@ -82,7 +82,8 @@ const VibePage1 = () => {
             DIFFERENTIATION
           </h1>
           <p className="text-sm md:text-xl leading-relaxed mb-10">
-          A seamless workspace experience is more than just convenience—it’s essential for productivity.
+            A seamless workspace experience is more than just convenience—it’s
+            essential for productivity.
           </p>
 
           {/* 80% Circle */}
@@ -92,17 +93,20 @@ const VibePage1 = () => {
             initial="hidden"
             animate={circleControls}
             variants={circleVariants}
-            transition={{ duration: 1, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: "easeOut" }}
           >
             {/* Replace with your actual CircularProgress component */}
-            <CircularProgress percentage={75}/>
+            <CircularProgress percentage={75} />
             <div>
-              <p className="text-center text-lg md:text-lg text-justify">
-              of businesses think they offer an integrated solution, but only 10% of users feel  
+              <p className=" text-lg md:text-lg text-justify">
+                of businesses think they offer an integrated solution, but only
+                10% of users feel
                 <br />
-                their workflows are truly connected. Vibe Connect stands apart by providing a  
+                their workflows are truly connected. Vibe Connect stands apart
+                by providing a
                 <br />
-                unified platform that actually bridges this gap, giving users the tools they need  
+                unified platform that actually bridges this gap, giving users
+                the tools they need
                 <br />
                 without the complexity.
               </p>

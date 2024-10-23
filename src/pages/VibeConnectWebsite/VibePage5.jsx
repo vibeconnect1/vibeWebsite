@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-
+import React, { useEffect, useState, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import pinkBlue from "/PinkBlue.jpg";
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0 },
@@ -15,9 +15,9 @@ const VibePage5 = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          controls.start('visible');
+          controls.start("visible");
         } else {
-          controls.start('hidden');
+          controls.start("hidden");
         }
       },
       { threshold: 0.2 } // Trigger when 20% of the element is visible
@@ -43,21 +43,22 @@ const VibePage5 = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-500 via-purple-800 to-blue-500 relative "  style={{
-      backgroundImage:
-        "url('https://reshapecxm.com/adobe-reshaping-cxm/media/f5877568151cd68b592fcf6ba3bfb24c/conclusion-full.jpg')",
-    }}>
+    <div
+      className="min-h-screen bg-gradient-to-b from-orange-500 via-purple-800 to-blue-500 relative "
+      style={{
+        backgroundImage: `url(${pinkBlue})`,
+      }}
+    >
       {/* Background overlay */}
-     
 
       <div className="relative p-4 md:p-6 flex items-center justify-center h-screen">
         <div className="text-white  text-center">
           <motion.h1
-            className="text-lg md:text-3xl lg:text-5xl font-bold mb-4  md:mb-6"
+            className="text-lg md:text-xl lg:text-5xl font-bold mb-4  md:mb-6"
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: "easeOut" }}
             ref={ref}
           >
             Reshape the Customer Experience. Transform Your Business.
@@ -67,7 +68,7 @@ const VibePage5 = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             ref={ref}
           >
             {/* Point A to Point B. The path to making a purchase was predictably linear, finite, and well traveled. */}
@@ -77,17 +78,25 @@ const VibePage5 = () => {
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1.4, ease: 'easeOut' }}
+            transition={{ duration: 1.4, ease: "easeOut" }}
             ref={ref}
           >
-        Vibe Connect reshapes customer experience by personalizing every interaction through data-driven insights. It adapts in real-time to evolving customer needs, ensuring timely, relevant responses. With unified solutions, it streamlines the customer journey across all touchpoints, enhancing satisfaction. Vibe Connect helps your brand stand out by offering consistent, memorable experiences. Stay ahead of the competition by turning customer experience into your biggest strength. Transform your business with Vibe Connect—your customers are ready.
-        </motion.p>
-        <motion.p
+            Vibe Connect reshapes customer experience by personalizing every
+            interaction through data-driven insights. It adapts in real-time to
+            evolving customer needs, ensuring timely, relevant responses. With
+            unified solutions, it streamlines the customer journey across all
+            touchpoints, enhancing satisfaction. Vibe Connect helps your brand
+            stand out by offering consistent, memorable experiences. Stay ahead
+            of the competition by turning customer experience into your biggest
+            strength. Transform your business with Vibe Connect—your customers
+            are ready.
+          </motion.p>
+          <motion.p
             className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4"
             initial="hidden"
             animate={controls}
             variants={textVariants}
-            transition={{ duration: 1.6, ease: 'easeOut' }}
+            transition={{ duration: 1.6, ease: "easeOut" }}
             ref={ref}
           >
             {/* Join us as we enlist some of the most forward-thinking minds in business, and share their views on what it takes to deliver a comprehensive, holistic, unforgettable customer experience. */}

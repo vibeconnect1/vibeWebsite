@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import SignInModal from "./SignInModal";
 import SignUpModal from "./SignUpModal";
 import ForgotPasswordModal from "./ForgotPasswordModal";
-import LoginOTP from './LoginOTP';
+import LoginOTP from "./LoginOTP";
+import redWhite from "/redWhite.png";
+import ringAnimation from "/ring.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 const dropdownVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (index) => ({
@@ -35,7 +39,10 @@ const VibePage3 = () => {
     {
       title: "Employee",
       links: [
-        { name: "Project & Task Management", url: "/project-management-website" },
+        {
+          name: "Project & Task Management",
+          url: "/project-management-website",
+        },
         // { name: "Task Management", url: "/task-management-website" },
         { name: "Calendar", url: "/calendar-website" },
         { name: "Communication", url: "/Communication-website" },
@@ -44,7 +51,6 @@ const VibePage3 = () => {
         { name: "Doctor Appointment", url: "/doctor-appointment-website" },
         { name: "Skill Grow", url: "/Skill-Grow-website" },
         { name: "Document Pro", url: "/Document Pro-website" },
-
       ],
     },
     {
@@ -75,8 +81,6 @@ const VibePage3 = () => {
         { name: "Roster Management", url: "/HRMS-website" },
         { name: "Reports and Analytics", url: "/HRMS-website" },
         { name: "Leave Management", url: "/HRMS-website" },
-       
-  
       ],
     },
   ];
@@ -98,18 +102,18 @@ const VibePage3 = () => {
   });
 
   const rings = [
-    { top: '75%', delay: 0 },
-    { top: '70%', delay: 0.5 },
-    { top: '65%', delay: 1 },
-    { top: '60%', delay: 1.5 },
+    { top: "75%", delay: 0 },
+    { top: "70%", delay: 0.5 },
+    { top: "65%", delay: 1 },
+    { top: "60%", delay: 1.5 },
   ];
 
   return (
     <div className=" flex justify-center items-center min-h-screen bg-gray-100 bg-cover bg-center">
       {/* Background image */}
-     
+
       <img
-        src="https://reshapecxm.com/adobe-reshaping-cxm/media/05347bf55b7a8506366b34e4168ce643/top-background-full.png"
+        src={redWhite}
         alt="Customer Experience Banner"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -117,22 +121,39 @@ const VibePage3 = () => {
       {/* Adobe Logo */}
       <div className="absolute top-5 right-4 md:right-10">
         <div className="flex items-center space-x-6">
-          <button onClick={toggleDropdown} className="text-white font-semibold">Solutions</button>
-          
-          <Link 
-          to="/AboutUs-website" 
-          className="text-white font-semibold hidden md:inline">About us</Link>
-          
-          <Link to="/FAQ" className="text-white font-semibold hidden md:inline">FAQ</Link>
-          <Link to="" className="text-white font-semibold hidden md:inline">Media</Link>
-          <Link to="" className="text-white font-semibold hidden md:inline">Case studies</Link>
-          <Link to="" className="text-white font-semibold hidden md:inline">Testimonial</Link>
-          <button onClick={openSignInModal} className="text-white font-semibold rounded">Login</button>
+          <button onClick={toggleDropdown} className="text-white font-semibold">
+            Solutions
+          </button>
+
+          <Link
+            to="/AboutUs-website"
+            className="text-white font-semibold hidden md:inline"
+          >
+            About us
+          </Link>
+
+          <Link to="/FAQ" className="text-white font-semibold hidden md:inline">
+            FAQ
+          </Link>
+          <Link to="" className="text-white font-semibold hidden md:inline">
+            Media
+          </Link>
+          <Link to="" className="text-white font-semibold hidden md:inline">
+            Case studies
+          </Link>
+          <Link to="" className="text-white font-semibold hidden md:inline">
+            Testimonial
+          </Link>
+          <button
+            onClick={openSignInModal}
+            className="text-white font-semibold rounded"
+          >
+            Login
+          </button>
           {/* <Link to="/Contact-website" className="text-white font-semibold hidden md:inline">Contact</Link> */}
-          
         </div>
       </div>
-      
+
       <AnimatePresence>
         {isDropdownOpen && (
           <motion.div
@@ -152,11 +173,16 @@ const VibePage3 = () => {
                   exit="exit"
                   variants={dropdownVariants}
                 >
-                  <h3 className="font-bold text-base text-black sm:text-lg mb-2 border-b-2 w-64  border-gray-400">{section.title}</h3>
-                 
+                  <h3 className="font-bold text-base text-black sm:text-lg mb-2 border-b-2 w-64  border-gray-400">
+                    {section.title}
+                  </h3>
+
                   <ul>
                     {section.links.map((link) => (
-                      <li key={link.url} className="py-1   font-serif  hover:text-gray-800  leading-relaxed">
+                      <li
+                        key={link.url}
+                        className="py-1   font-serif  hover:text-gray-800  leading-relaxed"
+                      >
                         <Link to={link.url}>{link.name}</Link>
                       </li>
                     ))}
@@ -177,7 +203,7 @@ const VibePage3 = () => {
           className="text-3xl md:text-7xl leading-tight lg:mr-80"
           initial={{ opacity: 0, translateY: 10 }}
           animate={{ opacity: inView ? 1 : 0, translateY: inView ? 0 : 10 }}
-          transition={{ duration: 1.5, ease: 'easeOut' }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
         >
           YOUR ULTIMATE
         </motion.h1>
@@ -187,7 +213,7 @@ const VibePage3 = () => {
           className="text-4xl md:text-8xl w-full lg:ml-20 font-bold leading-tight"
           initial={{ opacity: 0, translateY: 10 }}
           animate={{ opacity: inView ? 1 : 0, translateY: inView ? 0 : 10 }}
-          transition={{ duration: 1.5, ease: 'easeOut' }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
         >
           WORKSPACE
         </motion.h1>
@@ -197,7 +223,7 @@ const VibePage3 = () => {
           className="text-5xl md:text-9xl w-full lg:ml-20 font-bold leading-tight"
           initial={{ opacity: 0, translateY: 10 }}
           animate={{ opacity: inView ? 1 : 0, translateY: inView ? 0 : 10 }}
-          transition={{ duration: 1.5, ease: 'easeOut' }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
         >
           COMPANION
         </motion.h1>
@@ -206,7 +232,7 @@ const VibePage3 = () => {
           className="mt-4 md:mt-2 text-xl md:text-3xl font-medium"
           initial={{ opacity: 0 }}
           animate={{ opacity: inView ? 1 : 0 }}
-          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
         >
           TRY VIBE CONNECT NOW !
         </motion.p>
@@ -220,7 +246,8 @@ const VibePage3 = () => {
           style={{ top: ring.top }}
         >
           <motion.img
-            src="https://reshapecxm.com/adobe-reshaping-cxm/media/efe83ea39d6803671e6e82178fef7c55/ring-4-full.png"
+            // src="https://reshapecxm.com/adobe-reshaping-cxm/media/efe83ea39d6803671e6e82178fef7c55/ring-4-full.png"
+            src={ringAnimation}
             alt="Ring Animation"
             className="w-[120px] md:w-[320px] h-[30px]"
             initial={{ opacity: 0 }}
@@ -230,43 +257,78 @@ const VibePage3 = () => {
             }}
             transition={{
               duration: 4,
-              ease: 'easeInOut',
+              ease: "easeInOut",
               delay: ring.delay,
               repeat: Infinity,
-              repeatType: 'loop',
+              repeatType: "loop",
             }}
           />
         </div>
       ))}
-      <div className="absolute bottom-10 right-10 flex space-x-6">
-<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" className="h-7 transition-transform duration-300 hover:scale-110" />
-</a>
-<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn" className="h-8 transition-transform duration-300 hover:scale-110" />
-</a>
-<a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-  <img src="data:image/png;base64,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" alt="Twitter"
-   className="h-6 mt-1 transition-transform duration-300 hover:scale-110" />
-</a>
-</div>
-{modalType === "signin" && (
-        <SignInModal onSignUpClick={openSignUpModal} onForgotPasswordClick={openForgotPasswordModal} onLoginOTPClick={openLoginOTPModal} onClose={closeModal} />
+      <div className="fixed bottom-10 right-10 flex space-x-6 z-50">
+        <a
+          href="https://www.facebook.com/vibecopilot"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook"
+            className="h-7 transition-transform duration-300 hover:scale-110"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/vibecopilot/posts/?feedView=all"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg"
+            alt="LinkedIn"
+            className="h-8 transition-transform duration-300 hover:scale-110"
+          />
+        </a>
+        {/* <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="data:image/png;base64,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"
+            alt="Twitter"
+            className="h-6 mt-1 transition-transform duration-300 hover:scale-110"
+          />
+        </a> */}
+        <a
+          href="https://www.instagram.com/yourprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="bg-white rounded-lg px-[2px]"
+            icon={faInstagram}
+            size="2x"
+            style={{ color: "#E1306C" }} // Instagram's official color
+          />
+        </a>
+      </div>
+      {modalType === "signin" && (
+        <SignInModal
+          onSignUpClick={openSignUpModal}
+          onForgotPasswordClick={openForgotPasswordModal}
+          onLoginOTPClick={openLoginOTPModal}
+          onClose={closeModal}
+        />
       )}
       {modalType === "signup" && (
         <SignUpModal onSignInClick={openSignInModal} onClose={closeModal} />
       )}
-       {modalType === "forgotPassword" && (
+      {modalType === "forgotPassword" && (
         <ForgotPasswordModal onClose={closeModal} />
       )}
-      {modalType === "LoginOTP" && (
-        <LoginOTP onClose={closeModal}/>
-      )}
+      {modalType === "LoginOTP" && <LoginOTP onClose={closeModal} />}
     </div>
   );
 };
 
 export default VibePage3;
-
-
-
