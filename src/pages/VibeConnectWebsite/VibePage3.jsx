@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -108,6 +108,21 @@ const VibePage3 = () => {
     { top: "60%", delay: 1.5 },
   ];
 
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
+
   return (
     <div className=" flex justify-center items-center min-h-screen bg-gray-100 bg-cover bg-center">
       {/* Background image */}
@@ -144,12 +159,12 @@ const VibePage3 = () => {
           <Link to="" className="text-white font-semibold hidden md:inline">
             Testimonial
           </Link>
-          <button
+          {/* <button
             onClick={openSignInModal}
             className="text-white font-semibold rounded"
           >
             Login
-          </button>
+          </button> */}
           {/* <Link to="/Contact-website" className="text-white font-semibold hidden md:inline">Contact</Link> */}
         </div>
       </div>
@@ -157,6 +172,7 @@ const VibePage3 = () => {
       <AnimatePresence>
         {isDropdownOpen && (
           <motion.div
+            ref={dropdownRef}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}

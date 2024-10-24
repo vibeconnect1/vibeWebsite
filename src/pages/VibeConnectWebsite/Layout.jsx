@@ -76,11 +76,17 @@ const Layout = () => {
           <div
             key={index}
             onClick={() => scrollToPage(index)}
-            className={`w-3 h-3 my-2 p-1 rounded-full cursor-pointer ${
+            // className={`w-3 h-3 my-2 p-1 rounded-full cursor-pointer ${
+            //   currentPage === index
+            //     ? "bg-black border-white border-4 p-1"
+            //     : "bg-white p-1 border-4 border-black border-opacity-80"
+            // }`}
+            className={`w-3 h-3 my-2 rounded-full cursor-pointer transition-all duration-300 ${
               currentPage === index
-                ? "bg-black border-white border-4 p-1"
-                : "bg-white p-1 border-4 border-black border-opacity-80"
+                ? "bg-white border-2 border-white"
+                : "bg-white opacity-50"
             }`}
+            
           />
         ))}
       </div>

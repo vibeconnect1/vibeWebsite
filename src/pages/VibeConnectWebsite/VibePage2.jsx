@@ -5,7 +5,7 @@ import { FaUserAlt } from "react-icons/fa";
 import line from "/line.png";
 import purpleBlue from "/purpleBlue.png";
 import circles from "/circles.png";
-import pentagon from "/pentagon.png"
+import pentagon from "/pentagon.png";
 const textVariants = {
   hidden: { opacity: 0, x: -50 },
   visible: { opacity: 1, x: 0 },
@@ -78,41 +78,43 @@ const VibePage2 = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="mt-10 flex  justify-center pl-10">
         <motion.h2
-          className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white"
           ref={textRef}
           initial="hidden"
           animate={textControls}
           variants={textVariants}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          DATA & PERSONALIZATION
+          <h2 className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white">
+            DATA & PERSONALIZATION
+          </h2>
+        <p className="text-base md:text-lg leading-relaxed mt-4 text-white w-full md:w-96">
+            When it comes to creating great experiences, reliable and useful data
+          is ground zero. Square one. When it comes to creating great
+          experiences, reliable and useful data is ground zero. Square one. The
+          point of origin.
+          </p>
         </motion.h2>
-        <motion.p
-          className="text-base md:text-lg leading-relaxed mt-4 text-white w-full md:w-96"
+        {/* <motion.p
+          
           ref={textRef}
           initial="hidden"
           animate={textControls}
           variants={textVariants}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-        >
-          When it comes to creating great experiences, reliable and useful data
-          is ground zero. Square one. When it comes to creating great
-          experiences, reliable and useful data is ground zero. Square one. The
-          point of origin.
-        </motion.p>
+        ></motion.p> */}
 
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col md:flex-row ">
           <motion.div
-            className="w-full md:w-1/2 pr-0 md:pr-4"
+            // className="w-full md:w-1/2 pr-0 md:pr-4"
             ref={circleRef}
             initial="hidden"
             animate={circleControls}
             variants={circleVariants}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col items-center space-x-4">
               <CircularProgress percentage={80} />
               <p className="text-sm text-white">
                 of consumers are more likely to shop with brands who recognize,
@@ -123,16 +125,16 @@ const VibePage2 = () => {
 
           <div className="hidden md:flex justify-center w-full mt-6 md:mt-0">
             <div className="relative w-64 md:w-96 h-64 md:h-96 bottom-10">
-              <div className="relative w-full p-5 left-60">
+              <div className="relative w-full p-5 top-28 left-0">
                 <img
                   // src="https://reshapecxm.com/adobe-reshaping-cxm/media/6f9ef7248886a8f0600bdc4c81c22476/box-line-full.png"
                   src={pentagon}
                   alt="Box Graphic"
-                  className="w-full h-full object-contain"
+                  className="w-full h-96 object-contain"
                 />
               </div>
 
-              <div className="relative bottom-56 left-52 ml-2">
+              <div className="relative bottom-24 right-5  ml-2">
                 <img
                   // src="https://reshapecxm.com/adobe-reshaping-cxm/media/38800c92fdc0ccfff2e27c8dfc29859d/person-lines-full.png"
                   src={circles}
@@ -140,7 +142,7 @@ const VibePage2 = () => {
                   className="absolute inset-0 w-40 md:w-56 h-40 md:h-56 object-contain m-auto"
                 />
               </div>
-              <div className="relative bottom-56 left-52 ml-2">
+              <div className="relative bottom-24 right-5  ml-2">
                 <FaUserAlt
                   size={40}
                   md={52}
