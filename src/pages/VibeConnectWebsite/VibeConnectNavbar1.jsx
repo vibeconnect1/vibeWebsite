@@ -6,7 +6,8 @@ import SignInModal from "./SignInModal";
 import SignUpModal from "./SignUpModal";
 import ForgotPasswordModal from "./ForgotPasswordModal";
 import LoginOTP from "./LoginOTP";
-
+import LogoSvg from "../../Logo/Logo.svg";
+import BlackSvg from "../../Logo/BlackLogo.svg";
 const dropdownVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (index) => ({
@@ -119,13 +120,12 @@ const VibeConnectNavbar1 = () => {
     };
   }, []);
 
-
   const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsDropdownOpen(false); 
+        setIsDropdownOpen(false);
       }
     };
 
@@ -145,7 +145,7 @@ const VibeConnectNavbar1 = () => {
             <AnimatePresence>
               {isDropdownOpen && (
                 <motion.div
-                ref={dropdownRef}
+                  ref={dropdownRef}
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
@@ -185,9 +185,17 @@ const VibeConnectNavbar1 = () => {
 
             <div className="flex justify-between items-center px-8 py-1 z-20">
               <h1
-                className={`text-xl font-sans font-bold ${textColor} ml-10 z-10`}
+                className={`text-xl font-sans font-bold ${textColor} ml-10 z-10 mt-3`}
               >
-                <Link to="/home">Vibe Connect</Link>
+                <Link to="/home">
+                  {/* <div className=" z-50 absolute top-5 left-10 "> */}
+                  {textColor === "text-white" ? (
+                    <img src={LogoSvg} alt="Logo" width="125" height="125" />
+                  ) : (
+                    <img src={BlackSvg} alt="Logo" width="125" height="125" />
+                  )}
+                </Link>
+                {/* </div> */}
               </h1>
 
               {/* <div className="md:flex gap-8 hidden">
@@ -214,7 +222,11 @@ const VibeConnectNavbar1 = () => {
                     >
                       Solutions
                       <span>
-                       {isDropdownOpen ? <FaChevronUp size={12} /> : <FaChevronDown size={12} />}
+                        {isDropdownOpen ? (
+                          <FaChevronUp size={12} />
+                        ) : (
+                          <FaChevronDown size={12} />
+                        )}
                       </span>
                     </button>
                   </div>

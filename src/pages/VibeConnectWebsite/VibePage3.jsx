@@ -10,6 +10,7 @@ import redWhite from "/redWhite.png";
 import ringAnimation from "/ring.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import LogoSvg from "../../Logo/Logo.svg";
 const dropdownVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (index) => ({
@@ -133,7 +134,11 @@ const VibePage3 = () => {
       />
 
       {/* Adobe Logo */}
-      <div className="absolute top-5 right-4 md:right-10">
+      <div className=" z-50 absolute top-5 left-10 ">
+        <img src={LogoSvg} alt="Logo" width="125" height="125" />
+      </div>
+
+      <div className="absolute top-5 right-4 md:right-10 ">
         <div className="flex items-center space-x-6">
           <button onClick={toggleDropdown} className="text-white font-semibold">
             Solutions
@@ -280,7 +285,7 @@ const VibePage3 = () => {
           />
         </div>
       ))}
-      <div className="fixed bottom-10 right-10 flex space-x-6 z-50">
+      <div className="fixed bottom-5 right-10 flex space-x-6 z-50">
         <a
           href="https://www.facebook.com/vibecopilot"
           target="_blank"
