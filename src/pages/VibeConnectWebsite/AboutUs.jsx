@@ -6,13 +6,15 @@ import contact2 from '../../../Website Image/AboutUsfinal.jpeg';
 const AboutUs = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* <VibeConnectNavbar1 /> */}
+      <VibeConnectNavbar1 />
 
       {/* Gradient Background with Shadows and Layout */}
       <div className="flex flex-col justify-center">
         <main className="flex-grow">
           {/* Gradient background */}
-          <section className="relative bg-gradient-to-r from-[#bae6e9] to-[#c7f0c4] text-center py-20 lg:py-40">
+          {/* <section className="relative bg-gradient-to-r from-[#bae6e9] to-[#c7f0c4] text-center py-20 lg:py-40">
+          </section> */}
+          <section className="relative bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-20 lg:py-40">
           </section>
           {/* Form section */}
         </main>

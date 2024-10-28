@@ -6,12 +6,12 @@ import reputationimage from '../../../Website Image/reputationimage1.jpeg';
 import serviceimage from '../../../Website Image/serviceimage1.jpeg';
 import taskimage from '../../../Website Image/taskimage1.jpeg';
 import skill from '../../../Website Image/skillgrowimage1.jpeg';
-import asset from '../../../Website Image/supplier4.jpeg';
+import asset from '../../../Website Image/roaster.jpeg';
 
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import VibeConnectFooter from "./VibeConnectFooter";
 
-function SupplierPage() {
+function RostermanagementPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -31,7 +31,7 @@ function SupplierPage() {
       <main className="flex-grow">
         {/* Gradient background */}
         <section className="relative bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-40">
-        <h1 className="text-5xl font-bold  text-white mb-4">Supplier Management</h1>
+        <h1 className="text-5xl font-bold  text-white mb-4">Roster Management</h1>
         <div className="flex justify-center">
  
 </div>
@@ -61,10 +61,10 @@ function SupplierPage() {
       <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <h3 className="text-3xl font-bold  mb-2">			Supplier Management</h3>
+        <h3 className="text-3xl font-bold  mb-2">			Roster Management</h3>
 
         <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
-        Managing suppliers is a crucial element of effective operations, and Vibe Connect makes it effortless by centralizing all supplier-related activities in one place. It enables businesses to maintain accurate supplier profiles, track orders, and manage contracts with precision, while providing a clear overview of supplier performance and history. This comprehensive module ensures that all communications, transactions, and documentation with suppliers are efficiently recorded and accessible. With its ability to automate recurring orders and provide real-time updates, this feature strengthens relationships by fostering transparency and accountability. Businesses can also benefit from analytics-driven insights, allowing them to make informed decisions about supplier partnerships and optimize procurement processes. This results in a well-organized supplier network that supports smoother operations and strategic growth.</p>
+        Vibe Connect offers an advanced roster management feature that allows businesses to create, manage, and adjust employee schedules with precision and ease. By utilizing intuitive tools, managers can easily allocate shifts based on employee availability, skills, and preferences, ensuring that the right people are in the right roles at the right time. The platform also facilitates real-time updates, enabling swift responses to unforeseen changes, such as employee absences or urgent staffing needs. With integrated communication capabilities, team members can receive notifications about their schedules instantly, fostering transparency and collaboration. Additionally, analytics tools provide insights into workforce trends and performance, empowering managers to make informed decisions and optimize staffing strategies. This comprehensive approach to roster management not only improves operational efficiency but also enhances employee satisfaction by promoting a balanced work-life dynamic.</p>
 
         </div>
         {/* Image */}
@@ -115,4 +115,4 @@ function SupplierPage() {
   );
 }
 
-export default SupplierPage;
+export default RostermanagementPage;

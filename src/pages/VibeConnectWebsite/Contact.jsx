@@ -8,16 +8,16 @@ import contact2 from "../../../Website Image/contact3.jpeg";
 const ContactForm = () => {
   return (
     <div className=" flex flex-col">
-      {/* <VibeConnectNavbar1 /> */}
+      <VibeConnectNavbar1 />
 
       {/* Gradient Background with Shadows and Layout */}
       <div
-        className="flex flex-col lg:flex-row justify-center md:px-20 py-2 "
-        style={{ backgroundColor: "#e7f3ff" }}
+        className="flex flex-col lg:flex-row justify-center md:px-20  py-20"
+        style={{ backgroundColor: "#1a2e64" }}
       >
         {/* Form Section */}
         <div
-          className=" p-2 md:px-6 rounded-xl w-full text-white lg:w-2/4 my-8  shadow-2xl transition-all duration-500 ease-in-out transform "
+          className=" p-1 md:px-4 rounded-xl w-full text-white lg:w-3/6 my-8  shadow-2xl transition-all duration-500 ease-in-out transform "
           style={{ backgroundColor: "#223a7a" }}
         >
           <h2 className="text-4xl font-serif  mb-4 text-center text-white leading-tight tracking-wider">

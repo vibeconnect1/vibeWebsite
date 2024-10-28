@@ -204,7 +204,7 @@ function KnowMorePage3() {
         </div>
       </div>
 
-   <div className="mt-4">
+   <div className="">
    <VibeConnectFooter/></div>
     </div>
   );

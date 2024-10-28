@@ -6,12 +6,14 @@ import reputationimage from '../../../Website Image/reputationimage1.jpeg';
 import serviceimage from '../../../Website Image/serviceimage1.jpeg';
 import taskimage from '../../../Website Image/taskimage1.jpeg';
 import skill from '../../../Website Image/skillgrowimage1.jpeg';
-import asset from '../../../Website Image/supplier4.jpeg';
+import asset from '../../../Website Image/Purchaserequisition.jpeg';
+import asset1 from '../../../Website Image/purchaseorder1.jpeg';
+import asset2 from '../../../Website Image/workorder.jpeg';
 
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import VibeConnectFooter from "./VibeConnectFooter";
 
-function SupplierPage() {
+function ServicePRPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -31,7 +33,7 @@ function SupplierPage() {
       <main className="flex-grow">
         {/* Gradient background */}
         <section className="relative bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-40">
-        <h1 className="text-5xl font-bold  text-white mb-4">Supplier Management</h1>
+        <h1 className="text-5xl font-bold  text-white mb-4">Service PR/WO</h1>
         <div className="flex justify-center">
  
 </div>
@@ -61,10 +63,10 @@ function SupplierPage() {
       <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <h3 className="text-3xl font-bold  mb-2">			Supplier Management</h3>
+        <h3 className="text-3xl font-bold  mb-2">			Purchase Requisition</h3>
 
         <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
-        Managing suppliers is a crucial element of effective operations, and Vibe Connect makes it effortless by centralizing all supplier-related activities in one place. It enables businesses to maintain accurate supplier profiles, track orders, and manage contracts with precision, while providing a clear overview of supplier performance and history. This comprehensive module ensures that all communications, transactions, and documentation with suppliers are efficiently recorded and accessible. With its ability to automate recurring orders and provide real-time updates, this feature strengthens relationships by fostering transparency and accountability. Businesses can also benefit from analytics-driven insights, allowing them to make informed decisions about supplier partnerships and optimize procurement processes. This results in a well-organized supplier network that supports smoother operations and strategic growth.</p>
+        The Purchase Requisition feature in Vibe Connect facilitates the initial request for goods or services within an organization. It allows employees to submit detailed requests for the items they require, complete with specifications, quantities, and justifications. This structured approach ensures that all procurement requests are documented and can be easily tracked and reviewed by management. With built-in approval workflows, the system enhances transparency and accountability by routing requisitions through the necessary channels for authorization before any purchases are made. This feature not only promotes responsible spending but also aids in budget management, ensuring that all requests align with organizational goals.</p>
 
         </div>
         {/* Image */}
@@ -77,6 +79,45 @@ function SupplierPage() {
           />
         </div>
       </div>
+      <div className="flex flex-col gap-8 lg:flex-row-reverse justify-between items-center mb-12">
+        {/* Content */}
+        <div className="lg:w-1/2 mb-8 lg:mb-0">
+        <h3 className="text-3xl font-bold  mb-2">			Purchase Order</h3>
+
+        <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
+        The Purchase Order feature plays a critical role in the procurement process by transforming approved purchase requisitions into formal orders sent to vendors. This function streamlines the acquisition of goods and services, ensuring that orders are generated with accuracy and consistency. Users can generate purchase orders that include essential details such as item descriptions, quantities, pricing, and delivery terms, thereby reducing the risk of errors and miscommunication. Once issued, these purchase orders are tracked through the system, allowing for better management of inventory levels and financial forecasting. The integration of purchase orders with invoicing and payment processes provides a holistic view of the procurement cycle, enhancing financial oversight and ensuring that organizations maintain control over their spending.</p>
+
+        </div>
+        {/* Image */}
+        <div className="lg:w-1/2 flex justify-center ">
+          <img
+            src={asset1}
+            alt="AI Automation"
+            // className=" h-96 w-full p-4"
+            // style={{ transform: "rotate(-5deg)" }}
+          />
+        </div>
+      </div>
+      <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
+        {/* Content */}
+        <div className="lg:w-1/2 mb-8 lg:mb-0">
+        <h3 className="text-3xl font-bold  mb-2">			Work Order</h3>
+
+        <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
+        Work Orders provide a comprehensive solution for managing tasks related to maintenance, repairs, or other operational activities. Each work order is created with detailed information, including descriptions of the work required, priority levels, and assigned personnel. This feature ensures that all tasks are properly documented and can be monitored throughout their lifecycle, from initiation to completion. By offering tools for tracking progress and resource allocation, Vibe Connect empowers teams to enhance productivity and efficiency. Furthermore, the ability to attach relevant documents and images within each work order fosters better communication among team members, ensuring that everyone involved is aligned and informed.</p>
+
+        </div>
+        {/* Image */}
+        <div className="lg:w-1/2 flex justify-center ">
+          <img
+            src={asset2}
+            alt="AI Automation"
+            // className=" h-96 w-full p-4"
+            // style={{ transform: "rotate(-5deg)" }}
+          />
+        </div>
+      </div>
+     
      
 
      
@@ -115,4 +156,4 @@ function SupplierPage() {
   );
 }
 
-export default SupplierPage;
+export default ServicePRPage;

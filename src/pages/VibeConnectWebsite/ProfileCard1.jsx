@@ -88,20 +88,21 @@ const ProfileCard1 = () => {
   }, []);
 
   return (
-    <div className=' relative bottom-6'>
-    <div className="min-h-screen bg-cover bg-center" >
-      <div className="absolute top-0 right-0 w-full lg:w-1/3  text-white px-4 py-2 md:px-8 md:py-2 rounded-bl-2xl shadow-lg bg-gradient-to-r from-purple-900  to-pink-700" >
+    <div className='min-h-screen relative bottom-6'>
+    
+      <div className="absolute top-0 right-0 w-full lg:w-1/3  text-white px-4 py-2 md:px-8 md:py-2 rounded-bl-2xl shadow-lg bg-[#c61376]" >
         <p className="font-bold text-sm md:text-lg tracking-wide uppercase">Employee Productivity & Efficiency </p>
       </div>
-      <div className="absolute top-0 left-0 bg-gradient-to-r from-purple-900  to-pink-700 h-full">
-  <div className="w-20">
-    {/* Content inside the left sidebar */}
-  </div>
+      {/* <div className="absolute top-0 left-0 bg-gradient-to-r from-purple-900  to-pink-700 h-full md:block hidden">
+  
+</div> */}
+<div className="absolute top-0 left-0 bg-[#c61376]  to-pink-700 h-full w-20 md:block hidden">
+  
 </div>
 
       <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 py-6 lg:py-10">
         {/* Sidebar with Profile Images */}
-        <div className="flex flex-col items-start space-y-6 md:space-y-2 py-4 lg:py-8 lg:ml-20 xl:ml-52">
+        <div className="flex flex-col items-start space-y-2 md:space-y-2 py-4 lg:py-8 lg:ml-20 xl:ml-52">
     {profiles.map((profile, index) => (
       <motion.div
         key={profile.id}
@@ -116,7 +117,7 @@ const ProfileCard1 = () => {
           <>
             {/* Profile Image First */}
             <div className='flex justify-between items-center w-96'>
-            <div className="w-16 h-16 md:w-28 md:h-28 rounded-full border-2  p-2 md:p-1 bg-gradient-to-r from-purple-900  to-pink-700 border-pink-800" >
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2  p-2 md:p-1 bg-[#c61376] border-pink-800" >
               <img
                 src={profile.image}
                 alt={profile.name}
@@ -147,7 +148,7 @@ const ProfileCard1 = () => {
               </h3>
             </div>
             {/* Profile Image */}
-            <div className="w-16 h-16 md:w-28 md:h-28 rounded-full border-2  p-2 md:p-1 bg-gradient-to-r from-purple-900  to-pink-700 border-pink-800" >
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2  p-2 md:p-1 bg-[#c61376] border-pink-800" >
               <img
                 src={profile.image}
                 alt={profile.name}
@@ -161,7 +162,7 @@ const ProfileCard1 = () => {
     ))}
   </div>
         {/* Profile Details Section */}
-        <div ref={observerRef} className="lg:w-1/3 py-6 md:py-10 px-4 md:px-6 lg:mr-20 xl:mr-32">
+        <div ref={observerRef} className="lg:w-2/5 py-6 md:py-10 px-4 md:px-6 lg:mr-20 xl:mr-14">
           {profiles.map((profile) => (
             profile.id === activeProfile && (
               <motion.div
@@ -171,21 +172,21 @@ const ProfileCard1 = () => {
                 transition={{ duration: 1 }}
               >
                 <h3 className="text-lg md:text-2xl font-bold text-black uppercase">{profile.description}</h3>
-                <p className="mt-2 md:mt-4 text-sm md:text-xl text-justify font-serif text-gray-800 leading-relaxed">
+                <p className="mt-2 md:mt-4 text-sm md:text-base lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">
                   {profile.text}
                  
                 </p>
-                <p className="mt-2 md:mt-4 text-sm md:text-xl text-justify font-serif text-gray-800 leading-relaxed">
+                <p className="mt-2 md:mt-4 text-sm md:text-base lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">
                   {profile.text1}
                  
                 </p>
-                <p className="mt-2 md:mt-4 text-sm md:text-xl text-justify font-serif text-gray-800 leading-relaxed">
+                <p className="mt-2 md:mt-4 text-sm md:text-base  lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">
                   {profile.text2}
                  
                 </p>
-                <div className="my-4">
+                <div className="mb-4">
                   
-                  <div className="w-full   h-0.5 bg-blue-500"></div>
+                  <div className="w-full mt-1  h-0.5 bg-blue-500"></div>
                   <p className="text-center text-blue-500 mt-2 md:mt-4 font-semibold">
                   <a href="/KnowMore-page2">More Modules</a>
                   </p>
@@ -197,7 +198,7 @@ const ProfileCard1 = () => {
         </div>
        
       </div>
-      </div>
+      
      
     </div>
   );

@@ -63,7 +63,7 @@ const VibePage2 = () => {
 
   return (
     <div
-      className="min-h-screen relative bottom-4 text-white p-8 flex items-center justify-center bg-cover bg-center"
+      className="min-h-screen relative bottom-4 text-white p-8 flex items-center justify-center bg-[#197dc8] bg-cover bg-center"
       style={{
         backgroundImage: `url(${purpleBlue})`,
       }}

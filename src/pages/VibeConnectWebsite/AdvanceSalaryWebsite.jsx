@@ -7,7 +7,7 @@ import serviceimage from '../../../Website Image/serviceimage1.jpeg';
 import taskimage from '../../../Website Image/taskimage1.jpeg';
 import skill from '../../../Website Image/skillgrowimage1.jpeg';
 import purchasenew from '../../../Website Image/purchase2.jpeg';
-import auditnew from '../../../Website Image/Birthday.jpeg';
+import auditnew from '../../../Website Image/advancesalary.jpeg';
 
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import VibeConnectFooter from "./VibeConnectFooter";

@@ -81,13 +81,16 @@ const ProfileCard = () => {
 
   return (
     <div className="min-h-screen relative bottom-6 bg-cover bg-center" >
-      <div className="absolute top-0 right-0 w-full lg:w-1/3  text-white px-4 lg:px-8 py-2 rounded-bl-2xl bg-gradient-to-r from-green-500  to-green-700 shadow-lg" >
+      <div className="absolute top-0 right-0 w-full lg:w-1/3  text-white px-4 lg:px-8 py-2 rounded-bl-2xl bg-[#088e74] shadow-lg" >
         <p className="font-bold text-lg tracking-wide uppercase">PROPERTY MANAGEMENT TOOLS</p>
       </div>
-      <div className="absolute top-0 left-0 bg-gradient-to-r from-green-500  to-green-700 h-full">
+      {/* <div className="absolute top-0 left-0 bg-gradient-to-r from-green-500  to-green-700 h-full md:block hidden">
   <div className="w-20">
-    {/* Content inside the left sidebar */}
+    
   </div>
+</div> */}
+<div className="absolute top-0 left-0 bg-[#088e74]   h-full md:block hidden w-20">
+  
 </div>
       <div className="flex flex-col lg:flex-row justify-between gap-1 lg:gap-10 py-14 lg:py-10">
         {/* Sidebar with Profile Images */}
@@ -106,7 +109,7 @@ const ProfileCard = () => {
           <>
             {/* Profile Image First */}
             <div className='flex justify-between items-center w-96'>
-            <div className="w-16 h-16 md:w-28 md:h-28 rounded-full border-2  p-2 md:p-1 bg-gradient-to-r from-green-500  to-green-700 border-green-800" >
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2  p-2 md:p-1 bg-[#088e74] border-green-800" >
               <img
                 src={profile.image}
                 alt={profile.name}
@@ -137,7 +140,7 @@ const ProfileCard = () => {
               </h3>
             </div>
             {/* Profile Image */}
-            <div className="w-16 h-16 md:w-28 md:h-28 rounded-full bg-gradient-to-r from-green-500  to-green-700 border-2 p-1 border-green-800 " >
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#088e74] border-2 p-1 border-green-800 " >
               <img
                 src={profile.image}
                 alt={profile.name}
@@ -151,7 +154,7 @@ const ProfileCard = () => {
     ))}
   </div>
         {/* Profile Details Section */}
-        <div ref={observerRef} className="lg:w-1/3 py-1 md:py-10 px-4 md:px-12 lg:mr-20 xl:mr-32">
+        <div ref={observerRef} className="w-full lg:w-2/5 py-6 md:py-10 px-4 md:px-10 lg:mr-10 xl:mr-14">
           {profiles.map((profile) => (
             profile.id === activeProfile && (
               <motion.div
@@ -160,15 +163,15 @@ const ProfileCard = () => {
                 animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}
                 transition={{ duration: 1 }}
               >
-                <h3 className="text-lg md:text-2xl font-bold text-black">{profile.description}</h3>
-                <p className="mt-2 md:mt-4 text-sm md:text-xl text-justify font-serif text-gray-800 leading-relaxed" >
-  {profile.text}
-</p>
+                <h3 className="text-lg md:text-xl font-bold text-black">{profile.description}</h3>
+                <p className="mt-2 md:mt-2 text-sm md:text-base lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">
+          {profile.text}
+        </p>
 
 
 
 
-                <div className="my-4">
+                <div className="mb-4">
                  
                   <div className="w-full  h-0.5 bg-blue-500"></div>
                   <p className="text-center text-blue-500 mt-2 md:mt-4 font-semibold">

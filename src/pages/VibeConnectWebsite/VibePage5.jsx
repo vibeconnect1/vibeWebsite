@@ -44,7 +44,7 @@ const VibePage5 = () => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-b from-orange-500 via-purple-800 to-blue-500 relative "
+      className="min-h-screen  relative bottom-6"
       style={{
         backgroundImage: `url(${pinkBlue})`,
       }}
@@ -74,7 +74,7 @@ const VibePage5 = () => {
             {/* Point A to Point B. The path to making a purchase was predictably linear, finite, and well traveled. */}
           </motion.p>
           <motion.p
-            className="text-sm md:text-lg lg:text-3xl ml-2 md:ml-4 px-40 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
+            className="text-sm md:text-lg lg:text-3xl ml-2 md:ml-4 px-10 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
             initial="hidden"
             animate={controls}
             variants={textVariants}

@@ -271,7 +271,7 @@ function KnowMorePage() {
         </div>
       </div>
 
-   <div className="mt-4">
+   <div className="">
    <VibeConnectFooter/></div>
     </div>
   );

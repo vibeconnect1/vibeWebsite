@@ -6,12 +6,12 @@ import reputationimage from '../../../Website Image/reputationimage1.jpeg';
 import serviceimage from '../../../Website Image/serviceimage1.jpeg';
 import taskimage from '../../../Website Image/taskimage1.jpeg';
 import skill from '../../../Website Image/skillgrowimage1.jpeg';
-import asset from '../../../Website Image/supplier4.jpeg';
+import permitnew from '../../../Website Image/Integration.jpeg';
 
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import VibeConnectFooter from "./VibeConnectFooter";
 
-function SupplierPage() {
+function IntegrationPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -31,7 +31,7 @@ function SupplierPage() {
       <main className="flex-grow">
         {/* Gradient background */}
         <section className="relative bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-40">
-        <h1 className="text-5xl font-bold  text-white mb-4">Supplier Management</h1>
+        <h1 className="text-5xl font-bold  text-white mb-4">Integrations</h1>
         <div className="flex justify-center">
  
 </div>
@@ -55,25 +55,27 @@ function SupplierPage() {
       {/* <div className="flex justify-center text-base font-semibold relative top-64">
       <p className="text-gray-800">The Most Employee Centric and Customer Teams are using our tool VIBE to drive experience.</p>
       </div> */}
-      <div className=" relative top-10 text-gray-800 font-serif px-20 ">
+      <div className=" relative top-1 text-gray-800 font-serif px-20 ">
      
  
-      <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
+      <div className="flex flex-col gap-8 lg:flex-row items-center justify-between  ">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <h3 className="text-3xl font-bold  mb-2">			Supplier Management</h3>
+        <h3 className="text-3xl font-bold mb-2 ">Integrations</h3>
+    <p className="text-xl  mb-4 text-justify font-serif  leading-relaxed">
+    
+    Vibe Connect’s Integration module brings together your organization’s various communication channels, connecting email platforms, social media accounts, and other messaging tools within a single interface. This comprehensive integration fosters a cohesive environment, eliminating the need to switch between multiple applications and reducing the chance of missed updates or fragmented conversations. By centralizing all communication, the Integration module strengthens team connectivity, allowing members to easily access all relevant information and collaborate effectively. This unified approach enhances organizational alignment, providing a clear and organized communication experience that empowers teams to manage interactions with greater focus and efficiency.
+    </p>
 
-        <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
-        Managing suppliers is a crucial element of effective operations, and Vibe Connect makes it effortless by centralizing all supplier-related activities in one place. It enables businesses to maintain accurate supplier profiles, track orders, and manage contracts with precision, while providing a clear overview of supplier performance and history. This comprehensive module ensures that all communications, transactions, and documentation with suppliers are efficiently recorded and accessible. With its ability to automate recurring orders and provide real-time updates, this feature strengthens relationships by fostering transparency and accountability. Businesses can also benefit from analytics-driven insights, allowing them to make informed decisions about supplier partnerships and optimize procurement processes. This results in a well-organized supplier network that supports smoother operations and strategic growth.</p>
 
         </div>
         {/* Image */}
         <div className="lg:w-1/2 flex justify-center ">
           <img
-            src={asset}
+            src={permitnew}
             alt="AI Automation"
-            // className=" h-96 w-full p-4"
-            // style={{ transform: "rotate(-5deg)" }}
+            // className=" h-64 w-3/4"
+            // style={{ transform: "rotate(5deg)" }}
           />
         </div>
       </div>
@@ -115,4 +117,4 @@ function SupplierPage() {
   );
 }
 
-export default SupplierPage;
+export default IntegrationPage;

@@ -267,7 +267,7 @@ Investing in strategies that enhance employee productivity and efficiency not on
         </div>
       </div>
 
-   <div className="mt-4">
+   <div className="">
    <VibeConnectFooter/></div>
     </div>
   );

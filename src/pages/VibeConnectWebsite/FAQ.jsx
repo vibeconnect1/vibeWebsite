@@ -90,7 +90,7 @@ function FAQ() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      {/* <VibeConnectNavbar1/> */}
+      <VibeConnectNavbar1/>
       {/* <header className="bg-white py-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-semibold">Glide</h1>
@@ -102,7 +102,7 @@ function FAQ() {
       </header> */}
 <main className="flex-grow">
         {/* Gradient background */}
-        <section className="relative  bg-blue-200 text-center py-28">
+        <section className="relative  bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-28">
           <h1 className="text-5xl font-bold  text-black mb-4">Get Help</h1>
          
           <div className="flex justify-center">

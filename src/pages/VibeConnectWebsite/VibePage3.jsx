@@ -27,13 +27,13 @@ const VibePage3 = () => {
     {
       title: "FINANCE",
       links: [
-        { name: "Personal Financial", url: "/Personal-Financial-website" },
-        { name: "Purchase", url: "/Purchase-website" },
-        { name: "Bill Pay", url: "/billpay-website" },
-        { name: "Audit", url: "/audit-website" },
-        { name: "Insurance", url: "/insurance-website" },
-        { name: "Advance Salary", url: "/advance-salary-website" },
-        { name: "Other Bills", url: "/other-bills-website" },
+        { name: "Personal Financial", url: "/Personal-Financial" },
+        { name: "Purchase", url: "/Purchase" },
+        { name: "Bill Pay", url: "/billpay" },
+        { name: "Audit", url: "/audit" },
+        { name: "Insurance", url: "/insurance" },
+        { name: "Advance Salary", url: "/advance-salary" },
+        { name: "Other Bills", url: "/other-bills" },
       ],
     },
     {
@@ -41,46 +41,45 @@ const VibePage3 = () => {
       links: [
         {
           name: "Project & Task Management",
-          url: "/project-management-website",
+          url: "/project-management",
         },
         // { name: "Task Management", url: "/task-management-website" },
-        { name: "Calendar", url: "/calendar-website" },
-        { name: "Communication", url: "/Communication-website" },
-        { name: "Birthday", url: "/birthday-website" },
-        { name: "Fitness", url: "/fitness-website" },
-        { name: "Doctor Appointment", url: "/doctor-appointment-website" },
-        { name: "Skill Grow", url: "/Skill-Grow-website" },
-        { name: "Document Pro", url: "/Document Pro-website" },
+        { name: "Calendar", url: "/calendar" },
+        { name: "Communication", url: "/Communication" },
+        { name: "Birthday", url: "/birthday" },
+        { name: "Fitness", url: "/fitness" },
+        { name: "Doctor Appointment", url: "/doctor-appointment" },
+        { name: "Skill Grow", url: "/Skill-Grow" },
+        { name: "Document Pro", url: "/DocumentPro" },
       ],
     },
     {
       title: "Operations",
       links: [
-        { name: "Suppliers", url: "/suppliers-website" },
-        { name: "Service PR/WO", url: "/Servicepr-wo-website" },
-        { name: "Asset", url: "/Asset-website" },
-        { name: "Soft Services", url: "/SoftServices-website" },
-        { name: "Service Desk", url: "/Service-desk-website" },
-        { name: "Transportation", url: "/Transportation-website" },
-        { name: "F&B", url: "/fb-website" },
-        { name: "Integration", url: "/Integration-website" },
-        { name: "Passes", url: "/Passes-website" },
-        { name: "Permit", url: "/Permit-website" },
-        { name: "Attendance", url: "/Attendance-website" },
-        { name: "Incident", url: "/Incident-website" },
-        { name: "Meeting", url: "/Meeting-website" },
+        { name: "Suppliers", url: "/suppliers" },
+        { name: "Service PR/WO", url: "/Servicepr-wo" },
+        { name: "Asset", url: "/Asset" },
+        { name: "Soft Services", url: "/SoftServices" },
+        { name: "Service Desk", url: "/Service-desk" },
+        { name: "Transportation", url: "/Transportation" },
+        { name: "F&B", url: "/fb" },
+        { name: "Integration", url: "/Integration" },
+        { name: "Passes", url: "/Passes" },
+        { name: "Permit", url: "/Permit" },
+        // { name: "Attendance", url: "/Attendance-website" },
+        { name: "Incident", url: "/Incident" },
+        { name: "Meeting", url: "/Meeting" },
       ],
     },
     {
       title: "HUMAN RESOURCES",
       links: [
-        // { name: "HRMS", url: "/HRMS-website" },
-        { name: "Employee Onboarding", url: "/HRMS-website" },
-        { name: "Payroll Management", url: "/HRMS-website" },
-        { name: "Attendance Tracking", url: "/HRMS-website" },
-        { name: "Roster Management", url: "/HRMS-website" },
-        { name: "Reports and Analytics", url: "/HRMS-website" },
-        { name: "Leave Management", url: "/HRMS-website" },
+        { name: "Employee Onboarding", url: "/employee-onboarding" },
+        { name: "Payroll Management", url: "/payroll-management" },
+        { name: "Attendance Tracking", url: "/attendance-tracking" },
+        { name: "Roster Management", url: "/roster-management" },
+        { name: "Reports and Analytics", url: "/reports-analytics" },
+        { name: "Leave Management", url: "/leave-management" },
       ],
     },
   ];
@@ -124,13 +123,13 @@ const VibePage3 = () => {
   }, [dropdownRef]);
 
   return (
-    <div className=" flex justify-center items-center min-h-screen bg-gray-100 bg-cover bg-center">
+    <div className=" flex justify-center items-center min-h-screen bg-gradient-to-b from-[#ed987c] via-[#e36a51] to-[#dd5852] bg-cover bg-center">
       {/* Background image */}
 
       <img
         src={redWhite}
         alt="Customer Experience Banner"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full "
       />
 
       {/* Adobe Logo */}
@@ -141,7 +140,7 @@ const VibePage3 = () => {
           </button>
 
           <Link
-            to="/AboutUs-website"
+            to="/AboutUs"
             className="text-white font-semibold hidden md:inline"
           >
             About us
@@ -258,14 +257,14 @@ const VibePage3 = () => {
       {rings.map((ring, index) => (
         <div
           key={index}
-          className="absolute left-[35%] transform -translate-x-1/2 -translate-y-1/2"
+          className="absolute left-[35%]  transform -translate-x-1/2 -translate-y-1/2"
           style={{ top: ring.top }}
         >
           <motion.img
             // src="https://reshapecxm.com/adobe-reshaping-cxm/media/efe83ea39d6803671e6e82178fef7c55/ring-4-full.png"
             src={ringAnimation}
             alt="Ring Animation"
-            className="w-[120px] md:w-[320px] h-[30px]"
+            className="w-[120px] md:w-[320px] h-[30px] mb-24"
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
