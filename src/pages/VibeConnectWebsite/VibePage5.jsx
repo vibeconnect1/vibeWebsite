@@ -74,22 +74,24 @@ const VibePage5 = () => {
             {/* Point A to Point B. The path to making a purchase was predictably linear, finite, and well traveled. */}
           </motion.p>
           <motion.p
-            className="text-sm md:text-lg lg:text-3xl ml-2 md:ml-4 px-10 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
+            className="text-sm md:text-lg lg:text-2xl ml-2 md:ml-4 px-10 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
             initial="hidden"
             animate={controls}
             variants={textVariants}
             transition={{ duration: 1.4, ease: "easeOut" }}
             ref={ref}
           >
-            Vibe Connect reshapes customer experience by personalizing every
-            interaction through data-driven insights. It adapts in real-time to
-            evolving customer needs, ensuring timely, relevant responses. With
-            unified solutions, it streamlines the customer journey across all
-            touchpoints, enhancing satisfaction. Vibe Connect helps your brand
-            stand out by offering consistent, memorable experiences. Stay ahead
-            of the competition by turning customer experience into your biggest
-            strength. Transform your business with Vibe Connect—your customers
-            are ready.
+           By reshaping the customer experience through personalization, seamless digital integration, proactive communication, and continuous engagement, businesses in the finance and personal management sectors can transform their operations and strengthen customer loyalty. Emphasizing education and empowerment not only enhances customer satisfaction but also drives long-term growth and success in an increasingly competitive landscape.
+           <ul className="list-disc pl-5 mt-2 space-y-2">
+        <li className="text-white text-lg lg:text-2xl">Seamless Digital Experience - Unified Platforms </li>
+        <li className="text-white text-lg lg:text-2xl">Proactive Communication</li>
+        <li className="text-white text-lg lg:text-2xl">Dedicated Support Channels</li>
+        <li className="text-white text-lg lg:text-2xl">Financial Literacy and Empowerment</li>
+        <li className="text-white text-lg lg:text-2xl">Educational Resources</li>
+        <li className="text-white text-lg lg:text-2xl">Goal Setting Tools</li>
+        <li className="text-white text-lg lg:text-2xl">Enhanced Security Measures</li>
+        <li className="text-white text-lg lg:text-2xl">Robust Security Protocols</li>
+      </ul>
           </motion.p>
           <motion.p
             className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4"

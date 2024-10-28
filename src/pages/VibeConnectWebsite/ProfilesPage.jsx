@@ -179,7 +179,7 @@ const ProfilePage = () => {
         <div className="mb-4">
           <div className="w-full mt-1 h-0.5 bg-blue-500"></div>
           <p className="text-center text-blue-500 mt-2 md:mt-2 font-semibold text-sm md:text-base ">
-            <a href="/KnowMore-page">More Modules</a>
+            <a href="/management-compliance-tools">More Modules</a>
           </p>
         </div>
       </motion.div>

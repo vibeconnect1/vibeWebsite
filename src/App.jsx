@@ -66,10 +66,10 @@ function App() {
         <Route path="/Suppliers" element={<SuppliersWebsite />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Contact-us" element={<ContactForm />} />
-        <Route path="/KnowMore-page" element={<KnowMorePage />} />
-        <Route path="/KnowMore-page1" element={<KnowMorePage1 />} />
-        <Route path="/KnowMore-page2" element={<KnowMorePage2 />} />
-        <Route path="/KnowMore-page3" element={<KnowMorePage3 />} />
+        <Route path="/management-compliance-tools" element={<KnowMorePage />} />
+        <Route path="/property-management-tools" element={<KnowMorePage1 />} />
+        <Route path="//employee-productivity-and-efficiency" element={<KnowMorePage2 />} />
+        <Route path="//finance-and-personal-management" element={<KnowMorePage3 />} />
         <Route path="/Purchase" element={<PurchaseWebsite />} />
         <Route path="/billpay" element={<BillPayWebPage />} />
         <Route path="/audit" element={<AuditWebPage />} />

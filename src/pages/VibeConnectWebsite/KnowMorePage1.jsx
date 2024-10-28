@@ -6,8 +6,8 @@ import knowledgebase from '../../../Website Image/Knowledge base-1.jpg';
 import purchase from '../../../Website Image/purchase.jpg';
 import reporting from '../../../Website Image/Reporting-1.jpg';
 import vendor from '../../../Website Image/vendor.jpeg';
-import asset from '../../../Website Image/asset.jpeg';
-import pass from '../../../Website Image/pass.jpeg';
+import asset from '../../../Website Image/asset-remove.png';
+import pass from '../../../Website Image/pass-remove.png';
 import utility from '../../../Website Image/utility.jpeg';
 import work from '../../../Website Image/workspaceimage.jpeg';
 import facility from '../../../Website Image/Facilityimage.jpeg';
@@ -60,7 +60,16 @@ function KnowMorePage1() {
       <div className="relative top-8 font-serif text-gray-800 px-20">
       {/* First Section */}
       {/* <h1 className="text-4xl font-bold  mb-2">Property Management </h1> */}
-<p className="text-xl  mb-4 text-justify font-serif  leading-relaxed">Effortlessly manage your property with Vibe Connect’s Property Management. From tracking agreements and handling tenant requests to scheduling maintenance and managing payments, our tool centralizes all property-related tasks. Stay organized and efficient with our 15+ modules in Property Management system along with an intuitive dashboard that gives you complete control over your property management needs.  </p>
+<p className="text-xl  mb-4 text-justify font-serif  leading-relaxed">Integrating a Property Management Tool into a Facility Management company’s operations is essential for improving efficiency, tenant satisfaction, and overall property performance. By utilizing targeted tactics and optimizing touchpoints, companies can enhance their service delivery and maintain a competitive edge in the market. Implementing a Property Management Tool is crucial for Facility Management companies to enhance operational efficiency, improve tenant satisfaction, and ensure compliance with regulations. Key tactics and touchpoints to optimize the tool's usage.
+<ul className="list-disc pl-5 mt-2 space-y-2">
+        <li className="text-black text-lg lg:text-xl">Enhanced Operational Efficiency</li>
+        <li className="text-black text-lg lg:text-xl">Improved Tenant Satisfaction</li>
+        <li className="text-black text-lg lg:text-xl">Data-Driven Decision Making</li>
+        <li className="text-black text-lg lg:text-xl">Regulatory Compliance</li>
+        <li className="text-black text-lg lg:text-xl">Cost Savings</li>
+        <li className="text-black text-lg lg:text-xl">Scalability</li>
+       
+      </ul> </p>
       <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">

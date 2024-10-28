@@ -89,11 +89,15 @@ const VibePage2 = () => {
           <h2 className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white">
             DATA & PERSONALIZATION
           </h2>
-        <p className="text-base md:text-lg leading-relaxed mt-4 text-white w-full md:w-96">
-            When it comes to creating great experiences, reliable and useful data
-          is ground zero. Square one. When it comes to creating great
-          experiences, reliable and useful data is ground zero. Square one. The
-          point of origin.
+        <p className="text-sm md:text-xl lg:text-2xl font-serif text-justify leading-relaxed mt-4 text-white w-full ">
+        Data personalization for a Management and Compliance Tool improves user satisfaction also enhances compliance efficiency and effectiveness. By implementing tailored made features that address the unique needs of each user, organizations can foster a culture of accountability and streamlined management.  What we Achieve ?
+        <ul className="list-disc pl-5 mt-2 space-y-2">
+        <li className="text-white text-sm md:text-xl lg:text-2xl">Enhance User Experience</li>
+        <li className="text-white text-sm md:text-xl lg:text-2xl">Improve Compliance Monitoring</li>
+        <li className="text-white text-sm md:text-xl lg:text-2xl">Streamline Workflow</li>
+        <li className="text-white text-sm md:text-xl lg:text-2xl">Intelligent Recommendations</li>
+        <li className="text-white text-sm md:text-xl lg:text-2xl">Feedback Mechanism</li>
+      </ul>
           </p>
         </motion.h2>
         {/* <motion.p
@@ -114,17 +118,17 @@ const VibePage2 = () => {
             variants={circleVariants}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="flex flex-col items-center space-x-4">
+            {/* <div className="flex flex-col items-center space-x-4">
               <CircularProgress percentage={80} />
               <p className="text-sm text-white">
                 of consumers are more likely to shop with brands who recognize,
                 remember, and provide relevant offers and recommendations.
               </p>
-            </div>
+            </div> */}
           </motion.div>
 
           <div className="hidden md:flex justify-center w-full mt-6 md:mt-0">
-            <div className="relative w-64 md:w-96 h-64 md:h-96 bottom-10">
+            <div className="relative w-64 md:w-96 h-64 md:h-96 bottom-10 right-20">
               <div className="relative w-full p-5 top-28 left-0">
                 <img
                   // src="https://reshapecxm.com/adobe-reshaping-cxm/media/6f9ef7248886a8f0600bdc4c81c22476/box-line-full.png"

@@ -6,7 +6,7 @@ import reputationimage from '../../../Website Image/reputationimage1.jpeg';
 import serviceimage from '../../../Website Image/serviceimage1.jpeg';
 import taskimage from '../../../Website Image/taskimage1.jpeg';
 import skill from '../../../Website Image/skillgrowimage1.jpeg';
-import Knowmorepage2 from '../../../Website Image/knowmorepage2.jpeg'
+import Knowmorepage2 from '../../../Website Image/knowmorepage2-remove.png'
 
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import VibeConnectFooter from "./VibeConnectFooter";

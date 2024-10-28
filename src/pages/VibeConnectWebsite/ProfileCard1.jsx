@@ -171,7 +171,7 @@ const ProfileCard1 = () => {
                 animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}
                 transition={{ duration: 1 }}
               >
-                <h3 className="text-lg md:text-2xl font-bold text-black uppercase">{profile.description}</h3>
+                <h3 className="text-lg md:text-xl font-bold text-black uppercase">{profile.description}</h3>
                 <p className="mt-2 md:mt-4 text-sm md:text-base lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">
                   {profile.text}
                  
@@ -188,7 +188,7 @@ const ProfileCard1 = () => {
                   
                   <div className="w-full mt-1  h-0.5 bg-blue-500"></div>
                   <p className="text-center text-blue-500 mt-2 md:mt-4 font-semibold">
-                  <a href="/KnowMore-page2">More Modules</a>
+                  <a href="/employee-productivity-and-efficiency">More Modules</a>
                   </p>
                 </div>
               </motion.div>

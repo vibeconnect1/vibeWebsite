@@ -7,13 +7,13 @@ import purchase from '../../../Website Image/purchase.jpg';
 import reporting2 from '../../../Website Image/reporting2.jpeg';
 import permitnew from '../../../Website Image/permit2.jpeg';
 
-import cost from '../../../Website Image/cost2.jpeg';
+import cost from '../../../Website Image/cost2-remove.png';
 
 import compliancenew from '../../../Website Image/COMPLIANCE.jpeg';
 import auditnew from '../../../Website Image/AUDIT100.jpeg';
 import reportingnew from '../../../Website Image/document2.jpeg';
 import knowledgenew from '../../../Website Image/Knowledge2.jpeg';
-import purchasenew from '../../../Website Image/purchase2.jpeg';
+import purchasenew from '../../../Website Image/purchase2-remove.png';
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import VibeConnectFooter from "./VibeConnectFooter";
 
@@ -176,7 +176,7 @@ function KnowMorePage() {
           <img
             src={purchasenew}
             alt="AI Automation"
-            className=" h-full w-4/5 "
+            // className=" h-full w-4/5 "
             // style={{ transform: "rotate(5deg)" }}
           />
         </div>
@@ -198,7 +198,7 @@ function KnowMorePage() {
           <img
             src={cost}
             alt="AI Automation"
-            className=" h-full w-4/5"
+            // className=" h-full w-4/5"
             // style={{ transform: "rotate(-5deg)" }}
           />
         </div>

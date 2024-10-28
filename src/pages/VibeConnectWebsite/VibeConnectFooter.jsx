@@ -67,22 +67,22 @@ const VibeConnectFooter = () => {
               <h3 className="text-white font-bold mb-2">Features</h3>
               <ul>
                 <li className="mb-2">
-                  <a href="/KnowMore-page" className="hover:text-white">
+                  <a href="/management-compliance-tools" className="hover:text-white">
                     Management and compliance tools
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/KnowMore-page1" className="hover:text-white">
-                    PROPERTY MANAGEMENT TOOLS
+                  <a href="/property-management-tools" className="hover:text-white">
+                    Property Management tools
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/KnowMore-page2" className="hover:text-white">
+                  <a href="/employee-productivity-and-efficiency" className="hover:text-white">
                     Employee Productivity & Efficiency
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/KnowMore-page3" className="hover:text-white">
+                  <a href="/finance-and-personal-management" className="hover:text-white">
                     Finance & Personal Management
                   </a>
                 </li>
