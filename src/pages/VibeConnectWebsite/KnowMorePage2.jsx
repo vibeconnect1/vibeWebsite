@@ -69,22 +69,7 @@ function KnowMorePage2() {
 <p className="text-xl  mb-4 text-justify font-serif w-1/2 text-gray-800 leading-relaxed">
 Investing in strategies that enhance employee productivity and efficiency not only benefits the workforce but also drives overall organizational success. By creating a supportive environment and providing the necessary resources, companies can optimize performance and achieve sustainable growth.
   </p> */}
-  <p className="text-xl  mb-4 text-justify font-serif  leading-relaxed">Implementing a unified software tool for employee productivity and efficiency offers a range of unique differentiators that enhance collaboration, streamline processes, and empower employees. 
-By creating a centralized platform that supports real-time communication, automation, and data-driven decision-making, organizations can foster a productive work environment that drives both individual and organizational success. 
-Implementing a unified software tool can significantly enhance employee productivity and efficiency by streamlining processes, fostering collaboration, and providing actionable insights. Unique differentiators that set this approach apart from traditional, fragmented systems.
-<ul className="list-disc pl-5 mt-2 space-y-2">
-        <li className="text-black text-lg lg:text-xl">Centralized Platform: All-in-One Solution</li>
-        <li className="text-black text-lg lg:text-xl">Real-Time Collaboration: Seamless Communication </li>
-        <li className="text-black text-lg lg:text-xl">Customizable Workflows: Tailored Processes</li>
-        <li className="text-black text-lg lg:text-xl">Intelligent Automation: Task Automation </li>
-        <li className="text-black text-lg lg:text-xl">Comprehensive Analytics and Reporting: Data-Driven Insights </li>
-        <li className="text-black text-lg lg:text-xl">Enhanced Accessibility: Cross-Device Compatibility</li>
-        <li className="text-black text-lg lg:text-xl">Integrated Learning and Development: Skill Development Opportunities </li>
-        <li className="text-black text-lg lg:text-xl">User-Friendly Interface: Intuitive Design</li>
-        <li className="text-black text-lg lg:text-xl">Goal Setting and Tracking: Alignment with Organizational Objectives</li>
-        <li className="text-black text-lg lg:text-xl">Integrated Feedback Mechanisms: Continuous Improvement</li>
-       
-      </ul> </p>
+  
   <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">

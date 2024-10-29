@@ -54,7 +54,7 @@ const VibePage5 = () => {
       <div className="relative p-4 md:p-6 flex items-center justify-center h-screen">
         <div className="text-white  text-center">
           <motion.h1
-            className="text-lg md:text-xl lg:text-5xl font-bold mb-4  md:mb-6"
+            className="text-lg md:text-xl lg:text-4xl font-bold mb-4  md:mb-6"
             initial="hidden"
             animate={controls}
             variants={textVariants}
@@ -74,7 +74,7 @@ const VibePage5 = () => {
             {/* Point A to Point B. The path to making a purchase was predictably linear, finite, and well traveled. */}
           </motion.p>
           <motion.p
-            className="text-sm md:text-lg lg:text-2xl ml-2 md:ml-4 px-10 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
+            className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4 px-10 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
             initial="hidden"
             animate={controls}
             variants={textVariants}
@@ -83,14 +83,14 @@ const VibePage5 = () => {
           >
            By reshaping the customer experience through personalization, seamless digital integration, proactive communication, and continuous engagement, businesses in the finance and personal management sectors can transform their operations and strengthen customer loyalty. Emphasizing education and empowerment not only enhances customer satisfaction but also drives long-term growth and success in an increasingly competitive landscape.
            <ul className="list-disc pl-5 mt-2 space-y-2">
-        <li className="text-white text-lg lg:text-2xl">Seamless Digital Experience - Unified Platforms </li>
-        <li className="text-white text-lg lg:text-2xl">Proactive Communication</li>
-        <li className="text-white text-lg lg:text-2xl">Dedicated Support Channels</li>
-        <li className="text-white text-lg lg:text-2xl">Financial Literacy and Empowerment</li>
-        <li className="text-white text-lg lg:text-2xl">Educational Resources</li>
-        <li className="text-white text-lg lg:text-2xl">Goal Setting Tools</li>
-        <li className="text-white text-lg lg:text-2xl">Enhanced Security Measures</li>
-        <li className="text-white text-lg lg:text-2xl">Robust Security Protocols</li>
+        <li className="text-white text-lg lg:text-xl">Seamless Digital Experience - Unified Platforms </li>
+        <li className="text-white text-lg lg:text-xl">Proactive Communication</li>
+        <li className="text-white text-lg lg:text-xl">Dedicated Support Channels</li>
+        <li className="text-white text-lg lg:text-xl">Financial Literacy and Empowerment</li>
+        <li className="text-white text-lg lg:text-xl">Educational Resources</li>
+        <li className="text-white text-lg lg:text-xl">Goal Setting Tools</li>
+        <li className="text-white text-lg lg:text-xl">Enhanced Security Measures</li>
+        <li className="text-white text-lg lg:text-xl">Robust Security Protocols</li>
       </ul>
           </motion.p>
           <motion.p

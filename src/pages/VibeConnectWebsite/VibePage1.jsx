@@ -81,13 +81,25 @@ const VibePage1 = () => {
             <br />
             DIFFERENTIATION
           </h1>
-          <p className="text-sm md:text-xl leading-relaxed mb-10">
-            A seamless workspace experience is more than just convenience—it’s
-            essential for productivity.
-          </p>
+          <p className="text-xl  mb-4 text-justify font-serif pl-20 leading-relaxed">Implementing a unified software tool for employee productivity and efficiency offers a range of unique differentiators that enhance collaboration, streamline processes, and empower employees. 
+By creating a centralized platform that supports real-time communication, automation, and data-driven decision-making, organizations can foster a productive work environment that drives both individual and organizational success. 
+Implementing a unified software tool can significantly enhance employee productivity and efficiency by streamlining processes, fostering collaboration, and providing actionable insights. Unique differentiators that set this approach apart from traditional, fragmented systems.
+<ul className="list-disc pl-10 mt-2 space-y-2">
+        <li className="text-white text-lg lg:text-xl">Centralized Platform: All-in-One Solution</li>
+        <li className="text-white text-lg lg:text-xl">Real-Time Collaboration: Seamless Communication </li>
+        <li className="text-white text-lg lg:text-xl">Customizable Workflows: Tailored Processes</li>
+        <li className="text-white text-lg lg:text-xl">Intelligent Automation: Task Automation </li>
+        <li className="text-white text-lg lg:text-xl">Comprehensive Analytics and Reporting: Data-Driven Insights </li>
+        <li className="text-white text-lg lg:text-xl">Enhanced Accessibility: Cross-Device Compatibility</li>
+        {/* <li className="text-white text-lg lg:text-xl">Integrated Learning and Development: Skill Development Opportunities </li>
+        <li className="text-white text-lg lg:text-xl">User-Friendly Interface: Intuitive Design</li> */}
+        {/* <li className="text-black text-lg lg:text-xl">Goal Setting and Tracking: Alignment with Organizational Objectives</li>
+        <li className="text-black text-lg lg:text-xl">Integrated Feedback Mechanisms: Continuous Improvement</li> */}
+       
+      </ul> </p>
 
           {/* 80% Circle */}
-          <motion.div
+          {/* <motion.div
             className="relative flex flex-col items-center mr-0 md:mr-20 mb-10"
             ref={circleRef}
             initial="hidden"
@@ -95,7 +107,7 @@ const VibePage1 = () => {
             variants={circleVariants}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            {/* Replace with your actual CircularProgress component */}
+            
             <CircularProgress percentage={75} />
             <div>
               <p className=" text-lg md:text-lg text-justify">
@@ -111,7 +123,7 @@ const VibePage1 = () => {
                 without the complexity.
               </p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </div>

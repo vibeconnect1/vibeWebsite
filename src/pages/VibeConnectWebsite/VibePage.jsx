@@ -81,12 +81,19 @@ const VibePage = () => {
             <br />
             TOUCHPOINTS
           </h1>
-          <p className="text-md md:text-lg leading-relaxed mb-10 text-center w-11/12 md:w-2/3">
-          Connecting with the right people at the right time is essential in today’s dynamic work environment. At every interaction with Vibe Copilot, users demand quality, simplicity, and cohesion. 
-          </p>
+          <p className="text-xl  mb-4 text-justify font-serif w-11/12 leading-relaxed">Integrating a Property Management Tool into a Facility Management company’s operations is essential for improving efficiency, tenant satisfaction, and overall property performance. By utilizing targeted tactics and optimizing touchpoints, companies can enhance their service delivery and maintain a competitive edge in the market. Implementing a Property Management Tool is crucial for Facility Management companies to enhance operational efficiency, improve tenant satisfaction, and ensure compliance with regulations. Key tactics and touchpoints to optimize the tool's usage.
+<ul className="list-disc pl-5 mt-2 space-y-2">
+        <li className="text-white text-lg lg:text-xl">Enhanced Operational Efficiency</li>
+        <li className="text-white text-lg lg:text-xl">Improved Tenant Satisfaction</li>
+        <li className="text-white text-lg lg:text-xl">Data-Driven Decision Making</li>
+        <li className="text-white text-lg lg:text-xl">Regulatory Compliance</li>
+        <li className="text-white text-lg lg:text-xl">Cost Savings</li>
+        <li className="text-white text-lg lg:text-xl">Scalability</li>
+       
+      </ul> </p>
 
           {/* 95% Circle */}
-          <motion.div
+          {/* <motion.div
             className="relative flex flex-col items-center md:mr-20 mb-10"
             ref={circleRef}
             initial="hidden"
@@ -107,7 +114,7 @@ const VibePage = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </div>

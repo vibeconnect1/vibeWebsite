@@ -89,14 +89,14 @@ const VibePage2 = () => {
           <h2 className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white">
             DATA & PERSONALIZATION
           </h2>
-        <p className="text-sm md:text-xl lg:text-2xl font-serif text-justify leading-relaxed mt-4 text-white w-full ">
+        <p className="text-sm md:text-xl lg:text-xl font-serif text-justify leading-relaxed mt-4 text-white w-full ">
         Data personalization for a Management and Compliance Tool improves user satisfaction also enhances compliance efficiency and effectiveness. By implementing tailored made features that address the unique needs of each user, organizations can foster a culture of accountability and streamlined management.  What we Achieve ?
         <ul className="list-disc pl-5 mt-2 space-y-2">
-        <li className="text-white text-sm md:text-xl lg:text-2xl">Enhance User Experience</li>
-        <li className="text-white text-sm md:text-xl lg:text-2xl">Improve Compliance Monitoring</li>
-        <li className="text-white text-sm md:text-xl lg:text-2xl">Streamline Workflow</li>
-        <li className="text-white text-sm md:text-xl lg:text-2xl">Intelligent Recommendations</li>
-        <li className="text-white text-sm md:text-xl lg:text-2xl">Feedback Mechanism</li>
+        <li className="text-white text-sm md:text-xl lg:text-xl">Enhance User Experience</li>
+        <li className="text-white text-sm md:text-xl lg:text-xl">Improve Compliance Monitoring</li>
+        <li className="text-white text-sm md:text-xl lg:text-xl">Streamline Workflow</li>
+        <li className="text-white text-sm md:text-xl lg:text-xl">Intelligent Recommendations</li>
+        <li className="text-white text-sm md:text-xl lg:text-xl">Feedback Mechanism</li>
       </ul>
           </p>
         </motion.h2>
