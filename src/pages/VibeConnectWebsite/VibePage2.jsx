@@ -89,16 +89,30 @@ const VibePage2 = () => {
           <h2 className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white">
             DATA & PERSONALIZATION
           </h2>
-        <p className="text-sm md:text-xl lg:text-xl font-serif text-justify leading-relaxed mt-4 text-white w-full ">
-        Data personalization for a Management and Compliance Tool improves user satisfaction also enhances compliance efficiency and effectiveness. By implementing tailored made features that address the unique needs of each user, organizations can foster a culture of accountability and streamlined management.  What we Achieve ?
-        <ul className="list-disc pl-5 mt-2 space-y-2">
-        <li className="text-white text-sm md:text-xl lg:text-xl">Enhance User Experience</li>
-        <li className="text-white text-sm md:text-xl lg:text-xl">Improve Compliance Monitoring</li>
-        <li className="text-white text-sm md:text-xl lg:text-xl">Streamline Workflow</li>
-        <li className="text-white text-sm md:text-xl lg:text-xl">Intelligent Recommendations</li>
-        <li className="text-white text-sm md:text-xl lg:text-xl">Feedback Mechanism</li>
-      </ul>
-          </p>
+          <div className="text-sm md:text-xl lg:text-xl font-serif text-justify leading-relaxed mt-4 text-white w-full ">
+            Data personalization for a Management and Compliance Tool improves
+            user satisfaction also enhances compliance efficiency and
+            effectiveness. By implementing tailored made features that address
+            the unique needs of each user, organizations can foster a culture of
+            accountability and streamlined management. What we Achieve ?
+            <ul className="list-disc pl-5 mt-2 space-y-2">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
+                Enhance User Experience
+              </li>
+              <li className="text-white text-sm md:text-xl lg:text-xl">
+                Improve Compliance Monitoring
+              </li>
+              <li className="text-white text-sm md:text-xl lg:text-xl">
+                Streamline Workflow
+              </li>
+              <li className="text-white text-sm md:text-xl lg:text-xl">
+                Intelligent Recommendations
+              </li>
+              <li className="text-white text-sm md:text-xl lg:text-xl">
+                Feedback Mechanism
+              </li>
+            </ul>
+          </div>
         </motion.h2>
         {/* <motion.p
           
@@ -129,7 +143,7 @@ const VibePage2 = () => {
 
           <div className="hidden md:flex justify-center w-full mt-6 md:mt-0">
             <div className="relative w-64 md:w-96 h-64 md:h-96 bottom-10 right-20">
-              <div className="relative w-full p-5 top-28 left-0">
+              <div className="relative w-full p-5 top-28 left-10">
                 <img
                   // src="https://reshapecxm.com/adobe-reshaping-cxm/media/6f9ef7248886a8f0600bdc4c81c22476/box-line-full.png"
                   src={pentagon}
@@ -138,7 +152,7 @@ const VibePage2 = () => {
                 />
               </div>
 
-              <div className="relative bottom-24 right-5  ml-2">
+              <div className="relative bottom-24 right-5 left-5 ml-2">
                 <img
                   // src="https://reshapecxm.com/adobe-reshaping-cxm/media/38800c92fdc0ccfff2e27c8dfc29859d/person-lines-full.png"
                   src={circles}
@@ -146,7 +160,7 @@ const VibePage2 = () => {
                   className="absolute inset-0 w-40 md:w-56 h-40 md:h-56 object-contain m-auto"
                 />
               </div>
-              <div className="relative bottom-24 right-5  ml-2">
+              <div className="relative bottom-24 right-5 left-5 ml-2">
                 <FaUserAlt
                   size={40}
                   md={52}

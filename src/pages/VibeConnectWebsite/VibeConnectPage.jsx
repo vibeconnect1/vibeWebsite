@@ -58,7 +58,6 @@ const VibeConnectPage = () => {
       <VibePage />
       <ProfileCard />
       <VibePage1 />
-
       <ProfileCard1 />
       <div
         className="min-h-screen flex flex-col justify-center items-center text-white bottom-4 relative"

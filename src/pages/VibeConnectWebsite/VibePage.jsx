@@ -1,17 +1,17 @@
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import CircularProgress from './CircularProgress';
-import green from '../../../Website Image/greencolour.jpeg';
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
+import CircularProgress from "./CircularProgress";
+import green from "../../../Website Image/greencolour.jpeg";
 
 // Variants for animation
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const circleVariants = {
   hidden: { scale: 0, opacity: 0 },
-  visible: { scale: 1, opacity: 1 }
+  visible: { scale: 1, opacity: 1 },
 };
 
 const VibePage = () => {
@@ -25,17 +25,17 @@ const VibePage = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           if (entry.target === textRef.current) {
-            textControls.start('visible');
+            textControls.start("visible");
           }
           if (entry.target === circleRef.current) {
-            circleControls.start('visible');
+            circleControls.start("visible");
           }
         } else {
           if (entry.target === textRef.current) {
-            textControls.start('hidden');
+            textControls.start("hidden");
           }
           if (entry.target === circleRef.current) {
-            circleControls.start('hidden');
+            circleControls.start("hidden");
           }
         }
       },
@@ -74,23 +74,39 @@ const VibePage = () => {
           initial="hidden"
           animate={textControls}
           variants={textVariants}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
           <h1 className="text-2xl md:text-4xl font-bold mb-4 text-center">
             TACTICS &
-            <br />
             TOUCHPOINTS
           </h1>
-          <p className="text-xl  mb-4 text-justify font-serif w-11/12 leading-relaxed">Integrating a Property Management Tool into a Facility Management company’s operations is essential for improving efficiency, tenant satisfaction, and overall property performance. By utilizing targeted tactics and optimizing touchpoints, companies can enhance their service delivery and maintain a competitive edge in the market. Implementing a Property Management Tool is crucial for Facility Management companies to enhance operational efficiency, improve tenant satisfaction, and ensure compliance with regulations. Key tactics and touchpoints to optimize the tool's usage.
-<ul className="list-disc pl-5 mt-2 space-y-2">
-        <li className="text-white text-lg lg:text-xl">Enhanced Operational Efficiency</li>
-        <li className="text-white text-lg lg:text-xl">Improved Tenant Satisfaction</li>
-        <li className="text-white text-lg lg:text-xl">Data-Driven Decision Making</li>
-        <li className="text-white text-lg lg:text-xl">Regulatory Compliance</li>
-        <li className="text-white text-lg lg:text-xl">Cost Savings</li>
-        <li className="text-white text-lg lg:text-xl">Scalability</li>
-       
-      </ul> </p>
+          <p className="text-xl  mb-4 text-justify font-serif w-11/12 leading-relaxed">
+            Integrating a Property Management Tool into a Facility Management
+            company’s operations is essential for improving efficiency, tenant
+            satisfaction, and overall property performance. By utilizing
+            targeted tactics and optimizing touchpoints, companies can enhance
+            their service delivery and maintain a competitive edge in the
+            market. Implementing a Property Management Tool is crucial for
+            Facility Management companies to enhance operational efficiency,
+            improve tenant satisfaction, and ensure compliance with regulations.
+            Key tactics and touchpoints to optimize the tool's usage.
+            <ul className="list-disc pl-5 mt-2 space-y-2">
+              <li className="text-white text-lg lg:text-xl">
+                Enhanced Operational Efficiency
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Improved Tenant Satisfaction
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Data-Driven Decision Making
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Regulatory Compliance
+              </li>
+              <li className="text-white text-lg lg:text-xl">Cost Savings</li>
+              <li className="text-white text-lg lg:text-xl">Scalability</li>
+            </ul>{" "}
+          </p>
 
           {/* 95% Circle */}
           {/* <motion.div

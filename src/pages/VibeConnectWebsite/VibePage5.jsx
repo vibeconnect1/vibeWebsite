@@ -81,17 +81,39 @@ const VibePage5 = () => {
             transition={{ duration: 1.4, ease: "easeOut" }}
             ref={ref}
           >
-           By reshaping the customer experience through personalization, seamless digital integration, proactive communication, and continuous engagement, businesses in the finance and personal management sectors can transform their operations and strengthen customer loyalty. Emphasizing education and empowerment not only enhances customer satisfaction but also drives long-term growth and success in an increasingly competitive landscape.
-           <ul className="list-disc pl-5 mt-2 space-y-2">
-        <li className="text-white text-lg lg:text-xl">Seamless Digital Experience - Unified Platforms </li>
-        <li className="text-white text-lg lg:text-xl">Proactive Communication</li>
-        <li className="text-white text-lg lg:text-xl">Dedicated Support Channels</li>
-        <li className="text-white text-lg lg:text-xl">Financial Literacy and Empowerment</li>
-        <li className="text-white text-lg lg:text-xl">Educational Resources</li>
-        <li className="text-white text-lg lg:text-xl">Goal Setting Tools</li>
-        <li className="text-white text-lg lg:text-xl">Enhanced Security Measures</li>
-        <li className="text-white text-lg lg:text-xl">Robust Security Protocols</li>
-      </ul>
+            By reshaping the customer experience through personalization,
+            seamless digital integration, proactive communication, and
+            continuous engagement, businesses in the finance and personal
+            management sectors can transform their operations and strengthen
+            customer loyalty. Emphasizing education and empowerment not only
+            enhances customer satisfaction but also drives long-term growth and
+            success in an increasingly competitive landscape.
+            <ul className="list-disc pl-5 mt-4 space-y-2 grid grid-cols-2">
+              <li className="text-white text-lg lg:text-xl">
+                Seamless Digital Experience - Unified Platforms{" "}
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Proactive Communication
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Dedicated Support Channels
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Financial Literacy and Empowerment
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Educational Resources
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Goal Setting Tools
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Enhanced Security Measures
+              </li>
+              <li className="text-white text-lg lg:text-xl">
+                Robust Security Protocols
+              </li>
+            </ul>
           </motion.p>
           <motion.p
             className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4"

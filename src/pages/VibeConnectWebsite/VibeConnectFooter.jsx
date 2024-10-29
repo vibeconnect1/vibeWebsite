@@ -5,11 +5,11 @@ import { MdLocationPin } from "react-icons/md";
 const VibeConnectFooter = () => {
   return (
     <footer className="bg-gray-900 text-gray-400 relative z-10 flex justify-center">
-      <div className="w-full px-20">
+      <div className="w-full md:px-20 p-2">
         <p className="text-2xl text-white text-center mb-4 font-bold font-mono">
-          Vibe Connect
+          {/* Vibe Connect */}
         </p>
-        <div className="container  px-6">
+        <div className="container  md:px-6">
           <div className="flex md:flex-row flex-col  justify-between w-full">
             {/* <div className="w-full sm:w-1/2 md:w-1/4 ">
               <h3 className="text-white font-bold mb-2">Community</h3>
@@ -57,7 +57,7 @@ const VibeConnectFooter = () => {
                 <MdLocationPin />
                 Address
               </h2>
-              <p className="w-96 pl-5">
+              <p className="w-96 md:pl-5">
                 314, SAMRUDDHI BUSINESS PARK BEHIND EVERSHINE MALL, New Link Rd,
                 Chincholi Bunder, Malad West, Mumbai, Maharashtra 400064.
               </p>
@@ -67,22 +67,34 @@ const VibeConnectFooter = () => {
               <h3 className="text-white font-bold mb-2">Features</h3>
               <ul>
                 <li className="mb-2">
-                  <a href="/management-compliance-tools" className="hover:text-white">
+                  <a
+                    href="/management-compliance-tools"
+                    className="hover:text-white"
+                  >
                     Management and compliance tools
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/property-management-tools" className="hover:text-white">
+                  <a
+                    href="/property-management-tools"
+                    className="hover:text-white"
+                  >
                     Property Management tools
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/employee-productivity-and-efficiency" className="hover:text-white">
+                  <a
+                    href="/employee-productivity-and-efficiency"
+                    className="hover:text-white"
+                  >
                     Employee Productivity & Efficiency
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="/finance-and-personal-management" className="hover:text-white">
+                  <a
+                    href="/finance-and-personal-management"
+                    className="hover:text-white"
+                  >
                     Finance & Personal Management
                   </a>
                 </li>

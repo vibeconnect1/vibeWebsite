@@ -154,7 +154,10 @@ const VibePage3 = () => {
           <Link to="/FAQ" className="text-white font-semibold hidden md:inline">
             FAQ
           </Link>
-          <Link to="" className="text-white font-semibold hidden md:inline">
+          <Link to="/Contact-us" className="text-white font-semibold hidden md:inline">
+            Contact us
+          </Link>
+          {/* <Link to="" className="text-white font-semibold hidden md:inline">
             Media
           </Link>
           <Link to="" className="text-white font-semibold hidden md:inline">
@@ -162,7 +165,7 @@ const VibePage3 = () => {
           </Link>
           <Link to="" className="text-white font-semibold hidden md:inline">
             Testimonial
-          </Link>
+          </Link> */}
           {/* <button
             onClick={openSignInModal}
             className="text-white font-semibold rounded"
