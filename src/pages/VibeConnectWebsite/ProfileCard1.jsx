@@ -96,7 +96,7 @@ const ProfileCard1 = () => {
 
   return (
     <div className="min-h-screen relative bottom-6">
-      <div className="absolute top-0 right-0 w-full lg:w-1/3  text-white px-4 py-2 md:px-8 md:py-2 rounded-bl-2xl shadow-lg bg-[#c61376]">
+      <div className="absolute top-0 right-0 w-full lg:w-1/3 text-white px-4 -mt-10 md:mt-0 py-2 md:px-8 md:py-2 rounded-bl-2xl shadow-lg bg-[#c61376]">
         <p className="font-bold text-sm md:text-lg tracking-wide uppercase">
           Employee Productivity & Efficiency{" "}
         </p>
@@ -106,7 +106,7 @@ const ProfileCard1 = () => {
 </div> */}
       <div className="absolute top-0 left-0 bg-[#c61376]  to-pink-700 h-full w-20 md:block hidden"></div>
 
-      <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 py-6 lg:py-10">
+      <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 py-6 lg:py-10 mx-2">
         {/* Sidebar with Profile Images */}
         <div className="flex flex-col items-start space-y-2 md:space-y-2 py-4 lg:py-8 lg:ml-20 xl:ml-52">
           {profiles.map((profile, index) => (
