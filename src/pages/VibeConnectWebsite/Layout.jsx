@@ -71,7 +71,7 @@ const Layout = () => {
   return (
     <div className="relative h-screen">
       {/* Fixed dots navigation */}
-      <div className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50  p-2  bg-black bg-opacity-30 rounded-full">
+      <div className="hidden md:block fixed top-1/2 left-4 transform -translate-y-1/2 z-50  p-2  bg-black bg-opacity-30 rounded-full">
         {pages.map((_, index) => (
           <div
             key={index}

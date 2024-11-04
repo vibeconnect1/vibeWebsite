@@ -79,7 +79,7 @@ const VibePage1 = () => {
           <h1 className="text-3xl md:text-4xl font-bold mb-6">
             UNIQUE & DIFFERENTIATION
           </h1>
-          <div className="text-xl  mb-4 text-justify font-serif pl-20 leading-relaxed">
+          <div className="text-xl  mb-4 text-justify font-serif md:pl-20 leading-relaxed">
             Implementing a unified software tool for employee productivity and
             efficiency offers a range of unique differentiators that enhance
             collaboration, streamline processes, and empower employees. By

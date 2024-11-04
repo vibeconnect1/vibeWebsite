@@ -67,7 +67,7 @@ const VibeConnectPage = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-center max-w-3xl px-4">
+        <div className="text-center max-w-3xl md:px-4">
           <h1 className="text-2xl md:text-xl font-semibold">
             Reshape the Customer Experience. Transform Your Business.
           </h1>

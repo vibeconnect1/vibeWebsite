@@ -64,7 +64,7 @@ const VibeConnectFooter = () => {
             </div>
 
             <div className="w-full sm:w-1/2 md:w-1/4 mb-6">
-              <h3 className="text-white font-bold mb-2">Features</h3>
+              <h3 className="text-white font-bold mt-2 md:mb-2">Features</h3>
               <ul>
                 <li className="mb-2">
                   <a
