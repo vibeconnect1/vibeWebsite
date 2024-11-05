@@ -44,7 +44,7 @@ const VibePage5 = () => {
 
   return (
     <div
-      className="min-h-screen  relative bottom-6"
+      className="min-h-screen  relative bottom-0"
       style={{
         backgroundImage: `url(${pinkBlue})`,
       }}
@@ -89,28 +89,28 @@ const VibePage5 = () => {
             enhances customer satisfaction but also drives long-term growth and
             success in an increasingly competitive landscape.
             <ul className="list-disc pl-5 mt-4 space-y-2 grid md:grid-cols-2">
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Seamless Digital Experience - Unified Platforms{" "}
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Proactive Communication
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Dedicated Support Channels
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Financial Literacy and Empowerment
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Educational Resources
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Goal Setting Tools
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Enhanced Security Measures
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Robust Security Protocols
               </li>
             </ul>

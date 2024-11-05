@@ -57,7 +57,7 @@ const VibeConnectFooter = () => {
                 <MdLocationPin />
                 Address
               </h2>
-              <p className="w-96 md:pl-5">
+              <p className="lg:w-96 md:pl-5">
                 314, SAMRUDDHI BUSINESS PARK BEHIND EVERSHINE MALL, New Link Rd,
                 Chincholi Bunder, Malad West, Mumbai, Maharashtra 400064.
               </p>

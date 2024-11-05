@@ -61,7 +61,7 @@ const VibePage1 = () => {
 
   return (
     <div
-      className="relative bottom-6 flex min-h-screen items-center justify-center bg-cover "
+      className="relative bottom-0 flex min-h-screen items-center justify-center bg-cover "
       style={{
         backgroundImage: `url(${mansitting})`,
       }}
@@ -79,7 +79,7 @@ const VibePage1 = () => {
           <h1 className="text-3xl md:text-4xl font-bold mb-6">
             UNIQUE & DIFFERENTIATION
           </h1>
-          <div className="text-xl  mb-4 text-justify font-serif md:pl-20 leading-relaxed">
+          <div className="text-sm md:text-xl lg:text-xl font-serif pl-4 text-justify leading-relaxed mt-4 text-white w-full">
             Implementing a unified software tool for employee productivity and
             efficiency offers a range of unique differentiators that enhance
             collaboration, streamline processes, and empower employees. By
@@ -92,23 +92,23 @@ const VibePage1 = () => {
             efficiency by streamlining processes, fostering collaboration, and
             providing actionable insights. Unique differentiators that set this
             approach apart from traditional, fragmented systems. */}
-            <ul className="list-disc pl-5 mt-2 space-y-2">
-              <li className="text-white text-lg lg:text-xl">
+            <ul className="list-disc pl-4 mt-2 space-y-2">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Centralized Platform: All-in-One Solution
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Real-Time Collaboration: Seamless Communication{" "}
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Customizable Workflows: Tailored Processes
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Intelligent Automation: Task Automation{" "}
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Comprehensive Analytics and Reporting: Data-Driven Insights{" "}
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Enhanced Accessibility: Cross-Device Compatibility
               </li>
               {/* <li className="text-white text-lg lg:text-xl">Integrated Learning and Development: Skill Development Opportunities </li>

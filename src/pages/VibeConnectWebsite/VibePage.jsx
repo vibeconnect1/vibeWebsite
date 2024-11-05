@@ -61,15 +61,14 @@ const VibePage = () => {
 
   return (
     <div
-      className="relative bottom-6 flex h-screen items-center justify-center bg-cover "
+      className="relative bottom-0 flex h-screen items-center justify-center  bg-cover "
       style={{ backgroundImage: `url(${green})` }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-transparent to-green-700 opacity-90"></div>
 
       <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between text-white w-full">
         {/* Right side text */}
         <motion.div
-          className="flex flex-col justify-between items-center md:absolute md:right-0 md:w-2/3 w-full"
+          className="flex flex-col justify-between items-center md:absolute md:right-0 p-4 md:w-2/3 w-full"
           ref={textRef}
           initial="hidden"
           animate={textControls}
@@ -80,7 +79,7 @@ const VibePage = () => {
             TACTICS &
             TOUCHPOINTS
           </h1>
-          <p className="text-xl  mb-4 text-justify font-serif w-11/12 leading-relaxed">
+          <p className="text-sm md:text-xl lg:text-xl font-serif text-justify leading-relaxed mt-4 text-white w-full">
             Integrating a Property Management Tool into a Facility Management
             company’s operations is essential for improving efficiency, tenant
             satisfaction, and overall property performance. By utilizing
@@ -91,20 +90,20 @@ const VibePage = () => {
             improve tenant satisfaction, and ensure compliance with regulations.
             Key tactics and touchpoints to optimize the tool's usage.
             <ul className="list-disc pl-5 mt-2 space-y-2">
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Enhanced Operational Efficiency
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Improved Tenant Satisfaction
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Data-Driven Decision Making
               </li>
-              <li className="text-white text-lg lg:text-xl">
+              <li className="text-white text-sm md:text-xl lg:text-xl">
                 Regulatory Compliance
               </li>
-              <li className="text-white text-lg lg:text-xl">Cost Savings</li>
-              <li className="text-white text-lg lg:text-xl">Scalability</li>
+              <li className="text-white text-sm md:text-xl lg:text-xl">Cost Savings</li>
+              <li className="text-white text-sm md:text-xl lg:text-xl">Scalability</li>
             </ul>{" "}
           </p>
 
