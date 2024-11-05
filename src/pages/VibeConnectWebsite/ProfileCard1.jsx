@@ -106,7 +106,7 @@ const ProfileCard1 = () => {
 </div> */}
       <div className="absolute top-0 left-0 bg-[#c61376]  to-pink-700 h-full w-20 md:block hidden"></div>
 
-      <div className="flex flex-col lg:flex-row justify-between lg:gap-10 py-10 lg:py-10">
+      <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 py-6 lg:py-10 mx-2">
         {/* Sidebar with Profile Images */}
         <div className="flex flex-col items-start space-y-2 md:space-y-2 py-4 lg:py-8 lg:ml-20  p-4 xl:ml-52">
           {profiles.map((profile, index) => (
