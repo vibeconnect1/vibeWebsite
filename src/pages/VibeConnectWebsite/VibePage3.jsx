@@ -124,14 +124,15 @@ const VibePage3 = () => {
   }, [dropdownRef]);
 
   return (
-    <div className=" flex justify-center items-center min-h-screen bg-gradient-to-b from-[#ed987c] via-[#e36a51] to-[#dd5852] bg-cover bg-center">
+    <div className=" relative bottom-0 flex h-screen items-center justify-center  bg-cover"
+    style={{ backgroundImage: `url(${redWhite})` }}>
       {/* Background image */}
 
-      <img
+      {/* <img
         src={redWhite}
         alt="Customer Experience Banner"
-        className="absolute inset-0 w-full h-full "
-      />
+        className=" "
+      /> */}
 
       {/* Adobe Logo */}
       <div className=" z-50 absolute top-5 left-10 ">
@@ -223,7 +224,7 @@ const VibePage3 = () => {
         className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-10 text-center text-white px-4 md:px-0"
       >
         <motion.h1
-          className="text-3xl md:text-7xl leading-tight lg:mr-80"
+          className="text-2xl md:text-7xl leading-tight lg:mr-80"
           initial={{ opacity: 0, translateY: 10 }}
           animate={{ opacity: inView ? 1 : 0, translateY: inView ? 0 : 10 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
@@ -232,8 +233,8 @@ const VibePage3 = () => {
         </motion.h1>
 
         <motion.h1
-          // style={{ fontFamily: 'Montserrat, sans-serif' }}
-          className="text-4xl md:text-8xl w-full lg:ml-20 font-bold leading-tight"
+         
+          className="text-3xl md:text-8xl w-full lg:ml-20 font-bold leading-tight"
           initial={{ opacity: 0, translateY: 10 }}
           animate={{ opacity: inView ? 1 : 0, translateY: inView ? 0 : 10 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
@@ -242,8 +243,8 @@ const VibePage3 = () => {
         </motion.h1>
 
         <motion.h1
-          // style={{ fontFamily: 'Montserrat, sans-serif' }}
-          className="text-5xl md:text-9xl w-full lg:ml-20 font-bold leading-tight"
+         
+          className="text-4xl md:text-9xl w-full lg:ml-20 font-bold leading-tight"
           initial={{ opacity: 0, translateY: 10 }}
           animate={{ opacity: inView ? 1 : 0, translateY: inView ? 0 : 10 }}
           transition={{ duration: 1.5, ease: "easeOut" }}

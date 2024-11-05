@@ -63,13 +63,13 @@ const VibePage2 = () => {
 
   return (
     <div
-      className="min-h-screen relative bottom-4 text-white p-8 flex items-center justify-center bg-[#197dc8] bg-cover bg-center"
+      className="min-h-screen relative bottom-0 text-white p-8 flex items-center justify-center bg-[#197dc8] bg-cover bg-center"
       style={{
         backgroundImage: `url(${purpleBlue})`,
       }}
     >
       <div className="absolute bottom-44 right-80 flex items-center justify-end w-full">
-        <div className="relative w-full lg:w-3/5 h-full">
+        <div className=" relative w-full lg:w-3/5 h-full">
           <img
             src={line}
             alt="Box Graphic"
@@ -145,7 +145,6 @@ const VibePage2 = () => {
             <div className="relative w-64 md:w-96 h-64 md:h-96 bottom-10 right-20">
               <div className="relative w-full p-5 top-28 left-10">
                 <img
-                  // src="https://reshapecxm.com/adobe-reshaping-cxm/media/6f9ef7248886a8f0600bdc4c81c22476/box-line-full.png"
                   src={pentagon}
                   alt="Box Graphic"
                   className="w-full h-96 object-contain"
@@ -154,7 +153,6 @@ const VibePage2 = () => {
 
               <div className="relative bottom-24 right-5 left-5 ml-2">
                 <img
-                  // src="https://reshapecxm.com/adobe-reshaping-cxm/media/38800c92fdc0ccfff2e27c8dfc29859d/person-lines-full.png"
                   src={circles}
                   alt="Person Graphic"
                   className="absolute inset-0 w-40 md:w-56 h-40 md:h-56 object-contain m-auto"

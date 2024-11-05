@@ -255,7 +255,7 @@ const VibeConnectNavbar1 = () => {
                 <>
                   {document.body.classList.add("overflow-hidden")}
 
-                  <div className="absolute top-10 right-0 bg-white w-full p-4 md:hidden flex flex-col items-start h-screen overflow-y-auto">
+                  <div className="absolute top-14 right-0 bg-white w-full p-4 md:hidden flex flex-col items-start h-screen overflow-y-auto">
                     {/* Menu items */}
                     <AnimatePresence>
                       <motion.div
@@ -265,12 +265,12 @@ const VibeConnectNavbar1 = () => {
                         transition={{ duration: 0.3 }}
                         className="w-full px-4 sm:px-8 lg:px-24 py-6 lg:py-10  "
                       >
-                        <button
+                        {/* <button
                           onClick={openSignInModal}
                           className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md mr-4 z-10"
                         >
                           Sign in
-                        </button>
+                        </button> */}
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
                           {sections.map((section, index) => (

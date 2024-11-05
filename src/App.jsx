@@ -48,12 +48,23 @@ import IntegrationPage from "./pages/VibeConnectWebsite/IntegrationPage.jsx";
 import TransportationPage from "./pages/VibeConnectWebsite/TransportationPage.jsx";
 import ServiceDeskPage from "./pages/VibeConnectWebsite/ServiceDeskPage.jsx";
 import DocumentProPage from "./pages/VibeConnectWebsite/DocumentProPage.jsx";
+import ProfilePage from "./pages/VibeConnectWebsite/ProfilesPage.jsx";
+import VibePage3 from "./pages/VibeConnectWebsite/VibePage3.jsx";
+import VibePage4 from "./pages/VibeConnectWebsite/VibePage4.jsx";
+import VibePage2 from "./pages/VibeConnectWebsite/VibePage2.jsx";
+import VibePage from "./pages/VibeConnectWebsite/VibePage.jsx";
+import ProfileCard from "./pages/VibeConnectWebsite/ProfileCard.jsx";
+import VibePage1 from "./pages/VibeConnectWebsite/VibePage1.jsx";
+import ProfileCard1 from "./pages/VibeConnectWebsite/ProfileCard1.jsx";
+import VibePage5 from "./pages/VibeConnectWebsite/VibePage5.jsx";
+import ProfileCard2 from "./pages/VibeConnectWebsite/ProfileCard2.jsx";
+import VibeConnect from "./pages/VibeConnectWebsite/VibeConnect.jsx";
 function App() {
   return (
     <Router>
       <Routes>
         {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/home" element={<Layout />} />
+        <Route path="/home" element={<VibeConnect/>} />
         <Route path="/" element={<Navigate to="/home" />} />
         <Route
           path="/Personal-Financial"

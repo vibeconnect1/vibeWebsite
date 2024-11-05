@@ -82,7 +82,7 @@ const ProfilePage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative bottom-5 bg-cover bg-center" 
+    <div className="min-h-screen relative bottom-0 bg-cover bg-center" 
     >
     {/* Gradient on top right section */}
     <div className="absolute top-0 right-0 w-full  lg:w-1/3 text-white px-4 py-2 md:px-8 md:py-2 bg-[#00539d] rounded-bl-2xl shadow-lg">
@@ -102,9 +102,9 @@ const ProfilePage = () => {
 
 
     {/* Left sidebar with gradient */}
-    <div className="flex flex-col lg:flex-row justify-between  gap-6 lg:gap-10 py-6 lg:py-10">
+    <div className="flex flex-col lg:flex-row justify-between  gap-1 lg:gap-10 py-16 lg:py-10">
       {/* Sidebar with blue gradient */}
-      <div className="flex flex-col items-start space-y-2 md:space-y-2 py-4 lg:py-6 lg:ml-20 xl:ml-52  p-6 rounded-r-lg">
+      <div className="flex flex-col items-start space-y-2  md:space-y-2 py-1 lg:py-6 lg:ml-20 xl:ml-52  p-4 rounded-r-lg">
         {profiles.map((profile, index) => (
           <motion.div
             key={profile.id}
@@ -124,10 +124,10 @@ const ProfilePage = () => {
   
                   {/* Profile Name and Title */}
                   <div className="">
-                    <h2 className="text-gray-900 text-lg font-bold tracking-tight font-fantasy">
+                    <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif">
                       {profile.name}
                     </h2>
-                    <h3 className="text-gray-900 text-lg font-bold tracking-tight font-fantasy">
+                    <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif">
                       {profile.title}
                     </h3>
                   </div>
@@ -138,10 +138,10 @@ const ProfilePage = () => {
                 {/* Profile Name and Title First */}
                 <div className='flex justify-between items-center w-96'>
                   <div className="">
-                    <h2 className="text-gray-900 text-lg font-bold tracking-tight font-fantasy">
+                    <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold tracking-tight font-serif">
                       {profile.name}
                     </h2>
-                    <h3 className="text-gray-900 text-base font-bold tracking-tight font-fantasy">
+                    <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold tracking-tight font-serif">
                       {profile.title}
                     </h3>
                   </div>
@@ -170,7 +170,7 @@ const ProfilePage = () => {
         animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}
         transition={{ duration: 1 }}
       >
-        <h3 className="text-lg md:text-xl lg:text-xl font-bold text-black">
+        <h3 className="text-lg md:text-xl lg:text-xl font-bold font-serif text-black">
           {profile.description}
         </h3>
         <p className="mt-2 md:mt-2 text-sm md:text-base lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">

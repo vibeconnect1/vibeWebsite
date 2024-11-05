@@ -95,8 +95,8 @@ const ProfileCard1 = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative bottom-6">
-      <div className="absolute top-0 right-0 w-full lg:w-1/3 text-white px-4 -mt-10 md:mt-0 py-2 md:px-8 md:py-2 rounded-bl-2xl shadow-lg bg-[#c61376]">
+    <div className="min-h-screen relative bottom-0">
+      <div className="absolute top-0 right-0 w-full lg:w-1/3  text-white px-4 py-2 md:px-8 md:py-2 rounded-bl-2xl shadow-lg bg-[#c61376]">
         <p className="font-bold text-sm md:text-lg tracking-wide uppercase">
           Employee Productivity & Efficiency{" "}
         </p>
@@ -108,7 +108,7 @@ const ProfileCard1 = () => {
 
       <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10 py-6 lg:py-10 mx-2">
         {/* Sidebar with Profile Images */}
-        <div className="flex flex-col items-start space-y-2 md:space-y-2 py-4 lg:py-8 lg:ml-20 xl:ml-52">
+        <div className="flex flex-col items-start space-y-2 md:space-y-2 py-4 lg:py-8 lg:ml-20  p-4 xl:ml-52">
           {profiles.map((profile, index) => (
             <motion.div
               key={profile.id}
@@ -137,10 +137,10 @@ const ProfileCard1 = () => {
                     </div>
                     {/* Profile Name and Title */}
                     <div className=" ">
-                      <h2 className="text-gray-900 text-xl font-bold tracking-tight font-fantasy">
+                      <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif">
                         {profile.name}
                       </h2>
-                      <h3 className="text-gray-900 text-xl font-bold tracking-tight font-fantasy">
+                      <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif">
                         {profile.title}
                       </h3>
                     </div>
@@ -151,10 +151,10 @@ const ProfileCard1 = () => {
                   {/* Profile Name and Title First */}
                   <div className="flex justify-between items-center w-96">
                     <div className="">
-                      <h2 className="text-gray-900 text-xl  font-bold tracking-tight font-fantasy ">
+                      <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif ">
                         {profile.name}
                       </h2>
-                      <h3 className="text-gray-900 text-xl  font-bold tracking-tight font-fantasy ">
+                      <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif ">
                         {profile.title}
                       </h3>
                     </div>
@@ -189,7 +189,7 @@ const ProfileCard1 = () => {
                   }}
                   transition={{ duration: 1 }}
                 >
-                  <h3 className="text-lg md:text-xl font-bold text-black uppercase">
+                  <h3 className="text-lg md:text-xl font-bold text-black uppercase font-serif">
                     {profile.description}
                   </h3>
                   <p className="mt-2 md:mt-4 text-sm md:text-base lg:text-lg text-justify font-serif text-gray-800 leading-relaxed">
@@ -203,7 +203,7 @@ const ProfileCard1 = () => {
                   </p>
                   <div className="mb-4">
                     <div className="w-full mt-1  h-0.5 bg-blue-500"></div>
-                    <p className="text-center text-blue-500 mt-2 md:mt-4 font-semibold">
+                    <p className="text-center text-blue-500 mt-2 md:mt-4 font-semibold text-sm md:text-base">
                       <a href="/employee-productivity-and-efficiency">
                         More Modules
                       </a>
