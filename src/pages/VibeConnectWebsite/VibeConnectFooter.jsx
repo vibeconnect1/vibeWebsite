@@ -64,7 +64,7 @@ const VibeConnectFooter = () => {
             </div>
 
             <div className="w-full sm:w-1/2 md:w-1/4 mb-6">
-              <h3 className="text-white font-bold mt-2 md:mb-2">Features</h3>
+              <h3 className="text-white font-bold mt-2 md:mb-2">Solutions</h3>
               <ul>
                 <li className="mb-2">
                   <a
@@ -128,11 +128,11 @@ const VibeConnectFooter = () => {
                     Contact us
                   </a>
                 </li>
-                <li className="mb-2">
+                {/* <li className="mb-2">
                   <a href="#" className="hover:text-white">
                     Case studies
                   </a>
-                </li>
+                </li> */}
                 {/* <li className="mb-2"><a href="#" className="hover:text-white">Find an Accountant</a></li>
             <li className="mb-2"><a href="#" className="hover:text-white">Find a Partner</a></li>
             <li className="mb-2"><a href="#" className="hover:text-white">Become a Partner</a></li> */}

@@ -68,7 +68,7 @@ const VibePage2 = () => {
         backgroundImage: `url(${purpleBlue})`,
       }}
     >
-      <div className="absolute bottom-44 right-80 flex items-center justify-end w-full">
+      {/* <div className="absolute bottom-44 right-80 flex items-center justify-end w-full">
         <div className=" relative w-full lg:w-3/5 h-full">
           <img
             src={line}
@@ -76,9 +76,9 @@ const VibePage2 = () => {
             className="w-full h-full object-contain"
           />
         </div>
-      </div>
+      </div> */}
 
-      <div className="mt-10 flex  justify-center pl-10">
+      <div className="mt-10 flex  justify-center lg:pl-10">
         <motion.h2
           ref={textRef}
           initial="hidden"
@@ -86,9 +86,9 @@ const VibePage2 = () => {
           variants={textVariants}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h2 className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white">
+          <p className="text-2xl md:text-4xl lg:mt-4 font-bold  text-white">
             DATA & PERSONALIZATION
-          </h2>
+          </p>
           <div className="text-sm md:text-xl lg:text-xl font-serif text-justify leading-relaxed mt-4 text-white w-full ">
             Data personalization for a Management and Compliance Tool improves
             user satisfaction also enhances compliance efficiency and

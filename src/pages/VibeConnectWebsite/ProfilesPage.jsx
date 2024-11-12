@@ -104,58 +104,54 @@ const ProfilePage = () => {
     {/* Left sidebar with gradient */}
     <div className="flex flex-col lg:flex-row justify-between  gap-1 lg:gap-10 py-16 lg:py-10">
       {/* Sidebar with blue gradient */}
-      <div className="flex flex-col items-start space-y-2  md:space-y-2 py-1 lg:py-6 lg:ml-20 xl:ml-52  p-4 rounded-r-lg">
-        {profiles.map((profile, index) => (
-          <motion.div
-            key={profile.id}
-            onClick={() => handleProfileClick(profile.id)}
-            className={`flex items-center cursor-pointer transition-all duration-300 w-full ${activeProfile === profile.id ? 'opacity-100' : 'opacity-50'}`}
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: activeProfile === profile.id ? 1 : 0.5, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            {index % 2 === 0 ? (
-              <>
-                {/* Profile Image First */}
-                <div className='flex justify-between items-center w-96 '>
-                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 p-2 md:p-1 border-blue-800 bg-[#197dc8]">
-                    <img src={profile.image} alt={profile.name} className="w-full h-full p-2 filter invert" />
-                  </div>
-  
-                  {/* Profile Name and Title */}
-                  <div className="">
-                    <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif">
-                      {profile.name}
-                    </h2>
-                    <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold  font-serif">
-                      {profile.title}
-                    </h3>
-                  </div>
-                </div>
-              </>
-            ) : (
-              <>
-                {/* Profile Name and Title First */}
-                <div className='flex justify-between items-center w-96'>
-                  <div className="">
-                    <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold tracking-tight font-serif">
-                      {profile.name}
-                    </h2>
-                    <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold tracking-tight font-serif">
-                      {profile.title}
-                    </h3>
-                  </div>
-  
-                  {/* Profile Image */}
-                  <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 bg-[#197dc8] p-2 md:p-1 border-blue-800">
-                    <img src={profile.image} alt={profile.name} className="w-full h-full p-2 filter invert" />
-                  </div>
-                </div>
-              </>
-            )}
-          </motion.div>
-        ))}
-      </div>
+      <div className="flex flex-col items-start space-y-2 md:space-y-6 py-1 lg:py-6 lg:ml-20 xl:ml-52 p-4 rounded-r-lg">
+  {profiles.map((profile, index) => (
+    <motion.div
+      key={profile.id}
+      onMouseEnter={() => handleProfileClick(profile.id)} // Triggers on hover
+      className={`flex items-center cursor-pointer transition-all duration-300 w-full ${activeProfile === profile.id ? 'opacity-100' : 'opacity-50'}`}
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: activeProfile === profile.id ? 1 : 0.5, x: 0 }}
+      transition={{ duration: 0.5 }}
+      whileHover={{ opacity: 1}}
+    >
+      {index % 2 === 0 ? (
+        <>
+          {/* Profile Image First */}
+          <div className="flex justify-between items-center w-96">
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 p-2 md:p-1 border-blue-800 bg-[#197dc8]">
+              <img src={profile.image} alt={profile.name} className="w-full h-full p-2 filter invert" />
+            </div>
+            {/* Profile Name and Title */}
+            <div>
+              <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold font-serif">{profile.name}</h2>
+              <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold font-serif">{profile.title}</h3>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {/* Profile Name and Title First */}
+          <div className="flex justify-between items-center w-96">
+            <div>
+              <h2 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold tracking-tight font-serif">
+                {profile.name}
+              </h2>
+              <h3 className="text-gray-900 text-sm md:text-lg lg:text-lg font-bold tracking-tight font-serif">
+                {profile.title}
+              </h3>
+            </div>
+            {/* Profile Image */}
+            <div className="w-16 h-16 md:w-24 md:h-24 rounded-full border-2 bg-[#197dc8] p-2 md:p-1 border-blue-800">
+              <img src={profile.image} alt={profile.name} className="w-full h-full p-2 filter invert" />
+            </div>
+          </div>
+        </>
+      )}
+    </motion.div>
+  ))}
+</div>
+
   
       {/* Profile Details Section */}
       <div

@@ -92,12 +92,13 @@ function FAQ() {
     },
   ]);
 
-  // Toggle visibility of answers
+  // Toggle visibility of a single answer while closing others
   const toggleAnswer = (index) => {
     setFaqs(
-      faqs.map((faq, i) =>
-        i === index ? { ...faq, isVisible: !faq.isVisible } : faq
-      )
+      faqs.map((faq, i) => ({
+        ...faq,
+        isVisible: i === index ? !faq.isVisible : false,
+      }))
     );
   };
 
@@ -105,62 +106,34 @@ function FAQ() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <VibeConnectNavbar1 />
-      {/* <header className="bg-white py-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-3xl font-semibold">Glide</h1>
-          <div>
-            <button className="mr-4 text-gray-600">Log In</button>
-            <button className="bg-blue-500 text-white py-2 px-4 rounded-md">Sign Up</button>
-          </div>
-        </div>
-      </header> */}
+     
       <main className="flex-grow">
         {/* Gradient background */}
-        <section className="relative  bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-28">
-          <h1 className="text-5xl font-bold  text-white mb-4">Get Help</h1>
-
-          {/* <div className="flex justify-center">
-            <input
-              type="text"
-              placeholder="Search FAQs"
-              className="w-1/2 p-2 border border-gray-300 rounded-md"
-            />
-          </div> */}
-          {/* <div className='absolute mt-4 flex justify-center w-full h-full bg-cover bg-center'>
-          <img  src={compliance} alt="" className="z-20"/>
-          </div> */}
-          {/* <div className="absolute bottom-0 w-full overflow-hidden leading-none">
-    <svg className="relative block w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" d="M0,320L80,316C160,312,320,304,480,292C640,280,800,264,960,250.7C1120,237,1280,227,1360,223.3L1440,220L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-    </svg>
-  </div> */}
+        <section className="relative bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-28">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Get Help</h1>
         </section>
-        {/* Form section */}
       </main>
       {/* Main Content */}
-      <main className="container mx-auto mt-8 px-20 my-8">
-        {/* Get Help Section */}
-
+      <main className="container mx-auto mt-8 px-10 lg:px-20 my-8">
         <div className="flex gap-8">
-          {/* General Section */}
-          <section className="w-2/3">
+          <section className="lg:w-full">
             <h3 className="text-2xl font-semibold mb-4">General</h3>
             <ul className="space-y-2">
               {faqs.map((faq, index) => (
                 <li key={index} className="border-b py-2">
                   <div className="flex justify-between items-center">
-                    <a href="#" className="text-blue-500 font-serif text-xl">
+                    <a href="#" className="text-blue-500 font-serif md:text-lg lg:text-xl">
                       {faq.question}
                     </a>
                     <button
-                      className="text-blue-600 "
+                      className="text-blue-600"
                       onClick={() => toggleAnswer(index)}
                     >
                       {faq.isVisible ? <FaChevronUp /> : <FaChevronDown />}
                     </button>
                   </div>
                   {faq.isVisible && (
-                    <p className="text-gray-600 font-serif text-xl mt-2">
+                    <p className="text-gray-600 font-serif text-base md:text-lg lg:text-xl mt-2">
                       {faq.answer}
                     </p>
                   )}
@@ -168,33 +141,6 @@ function FAQ() {
               ))}
             </ul>
           </section>
-
-          {/* Quick Links Section */}
-          {/* <aside className="w-1/3 bg-white p-4 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li className="bg-gray-100 p-4 rounded-md">
-                <a href="#" className="text-blue-600">
-                  Join the Community
-                </a>
-                <p className="text-gray-500 text-sm">Post in our lively forum for quick help.</p>
-              </li>
-              <li className="bg-gray-100 p-4 rounded-md">
-                <a href="#" className="text-blue-600">
-                  Read Documentation & Guides
-                </a>
-                <p className="text-gray-500 text-sm">Learn at your own pace.</p>
-              </li>
-              <li className="bg-gray-100 p-4 rounded-md">
-                <a href="#" className="text-blue-600">
-                  Hire an Expert
-                </a>
-                <p className="text-gray-500 text-sm">
-                  Need a professional app fast and willing to pay?
-                </p>
-              </li>
-            </ul>
-          </aside> */}
         </div>
       </main>
       <VibeConnectFooter />

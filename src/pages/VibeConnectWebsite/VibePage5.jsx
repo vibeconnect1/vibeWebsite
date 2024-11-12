@@ -73,7 +73,7 @@ const VibePage5 = () => {
           >
             {/* Point A to Point B. The path to making a purchase was predictably linear, finite, and well traveled. */}
           </motion.p>
-          <motion.p
+          <motion.div
             className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4 md:px-10 mb-4 md:mb-6 text-justify font-serif  leading-relaxed"
             initial="hidden"
             animate={controls}
@@ -88,7 +88,7 @@ const VibePage5 = () => {
             customer loyalty. Emphasizing education and empowerment not only
             enhances customer satisfaction but also drives long-term growth and
             success in an increasingly competitive landscape.
-            <ul className="list-disc pl-5 mt-4 space-y-2 grid md:grid-cols-2">
+            <ul className="list-disc pl-5 mt-4 gap-2 grid md:grid-cols-2">
               <li className="text-white text-sm md:text-xl lg:text-xl">
                 Seamless Digital Experience - Unified Platforms{" "}
               </li>
@@ -114,7 +114,7 @@ const VibePage5 = () => {
                 Robust Security Protocols
               </li>
             </ul>
-          </motion.p>
+          </motion.div>
           <motion.p
             className="text-sm md:text-lg lg:text-xl ml-2 md:ml-4"
             initial="hidden"

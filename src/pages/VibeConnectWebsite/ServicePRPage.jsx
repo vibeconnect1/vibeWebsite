@@ -18,33 +18,18 @@ function ServicePRPage() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <VibeConnectNavbar1/>
-      <header className="flex justify-between p-4 bg-transparent absolute top-0 w-full z-10">
-        <div></div> {/* Placeholder for logo */}
-        {/* <nav className="space-x-6 text-white">
-          <a href="#integrations" className="hover:underline">Integrations</a>
-          <a href="#pricing" className="hover:underline">Pricing</a>
-          <a href="#login" className="hover:underline">Log in</a>
-          <a href="#login" className="hover:underline">Get Demo</a>
-          <a href="#demo" className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500">Contact Us</a>
-        </nav> */}
-      </header>
+      
 
       {/* Main section */}
       <main className="flex-grow">
         {/* Gradient background */}
         <section className="relative bg-gradient-to-r from-[#e98972] to-[#db5354] text-center py-40">
-        <h1 className="text-5xl font-bold  text-white mb-4">Service PR/WO</h1>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold  text-white mb-4">Service PR/WO</h1>
         <div className="flex justify-center">
  
 </div>
 
-          {/* <div className="flex justify-center">
-            <button className="bg-blue-500 text-white py-2 px-6 rounded-full">Learn More</button>
-            
-          </div> */}
-          {/* <div className='absolute mt-4 flex justify-center w-full h-full bg-cover bg-center'>
-          <img  src={compliance} alt="" className="z-20"/>
-          </div> */}
+          
           <div className="absolute bottom-0 w-full overflow-hidden leading-none">
     <svg className="relative block w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffffff" d="M0,320L80,316C160,312,320,304,480,292C640,280,800,264,960,250.7C1120,237,1280,227,1360,223.3L1440,220L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
@@ -57,15 +42,15 @@ function ServicePRPage() {
       {/* <div className="flex justify-center text-base font-semibold relative top-64">
       <p className="text-gray-800">The Most Employee Centric and Customer Teams are using our tool VIBE to drive experience.</p>
       </div> */}
-      <div className=" relative top-10 text-gray-800 font-serif px-20 ">
+      <div className=" relative top-10 text-gray-800 font-serif px-10 lg:px-20 ">
      
  
       <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <h3 className="text-3xl font-bold  mb-2">			Purchase Requisition</h3>
+        <h3 className="text-xl lg:text-3xl font-bold  mb-2">			Purchase Requisition</h3>
 
-        <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
         The Purchase Requisition feature in Vibe Connect facilitates the initial request for goods or services within an organization. It allows employees to submit detailed requests for the items they require, complete with specifications, quantities, and justifications. This structured approach ensures that all procurement requests are documented and can be easily tracked and reviewed by management. With built-in approval workflows, the system enhances transparency and accountability by routing requisitions through the necessary channels for authorization before any purchases are made. This feature not only promotes responsible spending but also aids in budget management, ensuring that all requests align with organizational goals.</p>
 
         </div>
@@ -82,9 +67,9 @@ function ServicePRPage() {
       <div className="flex flex-col gap-8 lg:flex-row-reverse justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <h3 className="text-3xl font-bold  mb-2">			Purchase Order</h3>
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold  mb-2">			Purchase Order</h3>
 
-        <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
+        <p className="md:text-lg lg:text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
         The Purchase Order feature plays a critical role in the procurement process by transforming approved purchase requisitions into formal orders sent to vendors. This function streamlines the acquisition of goods and services, ensuring that orders are generated with accuracy and consistency. Users can generate purchase orders that include essential details such as item descriptions, quantities, pricing, and delivery terms, thereby reducing the risk of errors and miscommunication. Once issued, these purchase orders are tracked through the system, allowing for better management of inventory levels and financial forecasting. The integration of purchase orders with invoicing and payment processes provides a holistic view of the procurement cycle, enhancing financial oversight and ensuring that organizations maintain control over their spending.</p>
 
         </div>
@@ -101,9 +86,9 @@ function ServicePRPage() {
       <div className="flex flex-col gap-8 lg:flex-row justify-between items-center mb-12">
         {/* Content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-        <h3 className="text-3xl font-bold  mb-2">			Work Order</h3>
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold  mb-2">			Work Order</h3>
 
-        <p className="text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
+        <p className="md:text-lg lg:text-xl  mb-4 text-justify font-serif text-gray-800 leading-relaxed">
         Work Orders provide a comprehensive solution for managing tasks related to maintenance, repairs, or other operational activities. Each work order is created with detailed information, including descriptions of the work required, priority levels, and assigned personnel. This feature ensures that all tasks are properly documented and can be monitored throughout their lifecycle, from initiation to completion. By offering tools for tracking progress and resource allocation, Vibe Connect empowers teams to enhance productivity and efficiency. Furthermore, the ability to attach relevant documents and images within each work order fosters better communication among team members, ensuring that everyone involved is aligned and informed.</p>
 
         </div>
@@ -133,22 +118,7 @@ function ServicePRPage() {
    
      
 
-      {/* Call to Action Section */}
-      {/* <div className=" flex flex-col justify-center items-center py-8  bg-gradient-to-r from-[#e98972] to-[#db5354] p-8 ">
-        <h1 className="text-3xl md:text-4xl font-bold text-white text-center">
-          Ready to reach product management mastery?
-        </h1>
-        <button className="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition">
-          Get a demo
-        </button>
-        
-        
-        <div className="mt-4 flex gap-4 text-sm text-white">
-          <span>Free 14-day trial</span>
-          <span>Easy setup</span>
-          <span>Cancel anytime</span>
-        </div>
-      </div> */}
+      
 
    <div className="mt-4">
    <VibeConnectFooter/></div>

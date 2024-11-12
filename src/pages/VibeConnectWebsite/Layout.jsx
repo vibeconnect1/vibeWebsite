@@ -93,7 +93,7 @@ const Layout = () => {
 
       {/* Page components */}
       {pages.map((PageComponent, index) => (
-        <div key={index} id={`page-${index}`} className="h-screen">
+        <div key={index} id={`page-${index}`} className="w-full overflow-hidden">
           {PageComponent}
         </div>
       ))}

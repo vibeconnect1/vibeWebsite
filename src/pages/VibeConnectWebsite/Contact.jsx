@@ -4,6 +4,7 @@ import VibeConnectFooter from "./VibeConnectFooter";
 import VibeConnectNavbar1 from "./VibeConnectNavbar1";
 import contact from "../../../Website Image/contact-form.png";
 import contact2 from "../../../Website Image/contact3.jpeg";
+import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 const ContactForm = () => {
   return (
@@ -25,8 +26,8 @@ const ContactForm = () => {
           </h2>
           {/* <p className="text-center text-gray-600 mb-6">We’d love to hear from you! Reach out with any questions or ideas.</p> */}
 
-          <div className="grid lg:grid-cols-2 gap-2">
-            {/* Full Name */}
+          {/* <div className="grid lg:grid-cols-2 gap-2">
+           
             <div className="mb-2 relative">
               <label
                 className="block  text-white text-medium font-semibold "
@@ -57,7 +58,7 @@ const ContactForm = () => {
               />
             </div>
 
-            {/* Email Address */}
+            
             <div className="mb-2 relative">
               <label
                 className="block  text-medium text-white font-semibold "
@@ -74,7 +75,7 @@ const ContactForm = () => {
               />
             </div>
 
-            {/* Message */}
+           
             <div className="mb-2">
               <label
                 className="block  text-medium text-white font-semibold "
@@ -106,16 +107,44 @@ const ContactForm = () => {
               ></textarea>
             </div>
 
-            {/* Submit Button */}
-          </div>
+           
+          </div> */}
+          <p className="text-base md:text-lg lg:text-xl font-serif mb-4 ">For Enquiries:</p>
+          <div className=" flex items-center gap-2">
+        <AiOutlineMail className="text-xl text-white" />
+        <div className="">
+          <p className="text-base md:text-lg lg:text-xl font-serif">Email Us: anurag.sharma@vibecopilot.ai</p>
+          {/* <p
+            
+            className="text-white text-sm md:text-lg lg:text-xl font-serif"
+          >
+            anurag.sharma@vibecopilot.ai
+          </p> */}
+        </div>
+      </div>
+      <p className="font-serif mb-4 text-sm md:text-lg lg:text-xl pl-8">Reach out to us with any questions or to learn more about our services.</p>
+
+      <div className=" flex items-center gap-2">
+        <AiOutlinePhone className="text-xl text-white" />
+        <div>
+          <p className="text-base md:text-lg lg:text-xl font-serif">Call Us:+91 84232 98423</p>
+          {/* <a
+            
+            className="text-white text-sm md:text-lg lg:text-xl "
+          >
+            +91 84232 98423
+          </a> */}
+        </div>
+      </div>
+      <p className="font-serif text-sm md:text-lg lg:text-xl pl-8">We're here to help! Call us directly for immediate assistance.</p>
           <div className="flex items-center justify-center mt-2">
-            <button
+            {/* <button
               type="submit"
               className="text-white font-semibold py-2 px-4 rounded-md shadow-lg transform  bg-blue-500"
               style={{ backgroundColor: "#e93842" }}
             >
               Submit
-            </button>
+            </button> */}
           </div>
         </div>
 

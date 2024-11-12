@@ -35,7 +35,7 @@ const VibeConnectNavbar1 = () => {
       ],
     },
     {
-      title: "Employee",
+      title: "EMPLOYEE",
       links: [
         {
           name: "Project & Task Management",
@@ -52,17 +52,17 @@ const VibeConnectNavbar1 = () => {
       ],
     },
     {
-      title: "Operations",
+      title: "OPERATIONS",
       links: [
-        { name: "Suppliers", url: "/suppliers" },
+        { name: "Suppliers Management", url: "/suppliers" },
         { name: "Service PR/WO", url: "/Servicepr-wo" },
-        { name: "Asset", url: "/Asset" },
-        { name: "Soft Services", url: "/SoftServices" },
+        { name: "Asset Management", url: "/Asset" },
+        { name: "Soft Services Management", url: "/SoftServices" },
         { name: "Service Desk", url: "/Service-desk" },
         { name: "Transportation", url: "/Transportation" },
-        { name: "F&B", url: "/fb" },
+        { name: "Food & Beverage", url: "/fb" },
         { name: "Integration", url: "/Integration" },
-        { name: "Passes", url: "/Passes" },
+        { name: "Passes(VMS)", url: "/Passes" },
         { name: "Permit", url: "/Permit" },
         // { name: "Attendance", url: "/Attendance-website" },
         { name: "Incident", url: "/Incident" },
@@ -70,7 +70,7 @@ const VibeConnectNavbar1 = () => {
       ],
     },
     {
-      title: "HUMAN RESOURCES",
+      title: "WORKFORCE",
       links: [
         { name: "Employee Onboarding", url: "/employee-onboarding" },
         { name: "Payroll Management", url: "/payroll-management" },
@@ -234,7 +234,7 @@ const VibeConnectNavbar1 = () => {
                     <Link to="/AboutUs">About us</Link>
                   </p>
                   <p className={`font-bold ${textColor} z-10`}>
-                    <Link to="/Contact-us">Contact</Link>
+                    <Link to="/Contact-us">Contact us</Link>
                   </p>
                 </div>
                 {/* <button
@@ -245,9 +245,9 @@ const VibeConnectNavbar1 = () => {
                 </button> */}
               </div>
 
-              <div className="md:hidden flex items-center">
+              <div className="md:hidden flex items-center justify-center mb-2">
                 <button onClick={toggleMenu}>
-                  <FaBars size={24} />
+                  <FaBars size={24} className="text-white" />
                 </button>
               </div>
 
@@ -255,7 +255,7 @@ const VibeConnectNavbar1 = () => {
                 <>
                   {document.body.classList.add("overflow-hidden")}
 
-                  <div className="absolute top-14 right-0 bg-white w-full p-4 md:hidden flex flex-col items-start h-screen overflow-y-auto">
+                  <div className="absolute top-14 right-0 bg-white w-full  md:hidden flex flex-col items-start h-screen overflow-y-auto">
                     {/* Menu items */}
                     <AnimatePresence>
                       <motion.div
@@ -272,7 +272,7 @@ const VibeConnectNavbar1 = () => {
                           Sign in
                         </button> */}
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 mb-4">
                           {sections.map((section, index) => (
                             <motion.div
                               key={section.title}
@@ -282,14 +282,14 @@ const VibeConnectNavbar1 = () => {
                               exit="exit"
                               variants={dropdownVariants}
                             >
-                              <h3 className="font-bold text-base sm:text-lg mb-2">
+                              <h3 className="font-bold text-sm font-serif mb-2">
                                 {section.title}
                               </h3>
                               <ul>
                                 {section.links.map((link) => (
                                   <li
                                     key={link.url}
-                                    className="py-1 font-medium text-sm mb-1 hover:text-gray-800"
+                                    className="py-1 font-serif text-sm mb-1 hover:text-gray-800"
                                   >
                                     <Link to={link.url}>{link.name}</Link>
                                   </li>

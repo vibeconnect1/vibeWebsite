@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import CircularProgress from "./CircularProgress";
-import green from "../../../Website Image/greencolour.jpeg";
+import green from "../../../Website Image/tactics.png";
 
 // Variants for animation
 const textVariants = {
@@ -61,11 +61,13 @@ const VibePage = () => {
 
   return (
     <div
-      className="relative bottom-0 flex h-screen items-center justify-center  bg-cover "
-      style={{ backgroundImage: `url(${green})` }}
+      className="relative bottom-0 flex h-screen items-center justify-center  bg-cover bg-center"
+      style={{ backgroundImage: `url(${green})`
+      
+       }}
     >
-
-      <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between text-white w-full">
+ <div className="absolute inset-0 bg-green-900 opacity-60"></div>
+      <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between text-white  w-full">
         {/* Right side text */}
         <motion.div
           className="flex flex-col justify-between items-center md:absolute md:right-0 p-4 md:w-2/3 w-full"
@@ -79,7 +81,7 @@ const VibePage = () => {
             TACTICS &
             TOUCHPOINTS
           </h1>
-          <p className="text-sm md:text-xl lg:text-xl font-serif text-justify leading-relaxed mt-4 text-white w-full">
+          <div className="text-sm md:text-lg lg:text-xl font-serif text-justify leading-relaxed z-10 mt-4 text-white  w-full">
             Integrating a Property Management Tool into a Facility Management
             company’s operations is essential for improving efficiency, tenant
             satisfaction, and overall property performance. By utilizing
@@ -89,7 +91,7 @@ const VibePage = () => {
             Facility Management companies to enhance operational efficiency,
             improve tenant satisfaction, and ensure compliance with regulations.
             Key tactics and touchpoints to optimize the tool's usage.
-            <ul className="list-disc pl-5 mt-2 space-y-2">
+            <ul className="list-disc pl-5 mt-2 gap-2 grid md:grid-cols-2">
               <li className="text-white text-sm md:text-xl lg:text-xl">
                 Enhanced Operational Efficiency
               </li>
@@ -105,7 +107,7 @@ const VibePage = () => {
               <li className="text-white text-sm md:text-xl lg:text-xl">Cost Savings</li>
               <li className="text-white text-sm md:text-xl lg:text-xl">Scalability</li>
             </ul>{" "}
-          </p>
+          </div>
 
           {/* 95% Circle */}
           {/* <motion.div

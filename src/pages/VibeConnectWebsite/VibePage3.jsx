@@ -38,7 +38,7 @@ const VibePage3 = () => {
       ],
     },
     {
-      title: "Employee",
+      title: "EMPLOYEE",
       links: [
         {
           name: "Project & Task Management",
@@ -55,17 +55,17 @@ const VibePage3 = () => {
       ],
     },
     {
-      title: "Operations",
+      title: "OPERATIONS",
       links: [
-        { name: "Suppliers", url: "/suppliers" },
+        { name: "Suppliers Management", url: "/suppliers" },
         { name: "Service PR/WO", url: "/Servicepr-wo" },
-        { name: "Asset", url: "/Asset" },
-        { name: "Soft Services", url: "/SoftServices" },
+        { name: "Asset Management", url: "/Asset" },
+        { name: "Soft Services Management", url: "/SoftServices" },
         { name: "Service Desk", url: "/Service-desk" },
         { name: "Transportation", url: "/Transportation" },
-        { name: "F&B", url: "/fb" },
+        { name: "Food & Beverage", url: "/fb" },
         { name: "Integration", url: "/Integration" },
-        { name: "Passes", url: "/Passes" },
+        { name: "Passes(VMS)", url: "/Passes" },
         { name: "Permit", url: "/Permit" },
         // { name: "Attendance", url: "/Attendance-website" },
         { name: "Incident", url: "/Incident" },
@@ -73,7 +73,7 @@ const VibePage3 = () => {
       ],
     },
     {
-      title: "HUMAN RESOURCES",
+      title: "WORKFORCE",
       links: [
         { name: "Employee Onboarding", url: "/employee-onboarding" },
         { name: "Payroll Management", url: "/payroll-management" },
@@ -124,7 +124,7 @@ const VibePage3 = () => {
   }, [dropdownRef]);
 
   return (
-    <div className=" relative bottom-0 flex h-screen items-center justify-center  bg-cover"
+    <div className="min-h-screen relative bottom-0 flex items-center justify-center  bg-cover bg-center bg-[#de5b57]"
     style={{ backgroundImage: `url(${redWhite})` }}>
       {/* Background image */}
 
@@ -221,7 +221,7 @@ const VibePage3 = () => {
       {/* Text content */}
       <div
         ref={ref}
-        className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-10 text-center text-white px-4 md:px-0"
+        className="absolute top-2/5 md:top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 z-10 text-center text-white px-4 md:px-0"
       >
         <motion.h1
           className="text-2xl md:text-7xl leading-tight lg:mr-80"
@@ -273,7 +273,7 @@ const VibePage3 = () => {
             // src="https://reshapecxm.com/adobe-reshaping-cxm/media/efe83ea39d6803671e6e82178fef7c55/ring-4-full.png"
             src={ringAnimation}
             alt="Ring Animation"
-            className="w-[120px] md:w-[320px] h-[30px] mb-24"
+            className="w-[120px] md:w-[320px] h-[30px] mb-4"
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,

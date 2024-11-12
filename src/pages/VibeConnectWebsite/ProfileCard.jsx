@@ -93,20 +93,16 @@ const ProfileCard = () => {
       <div className="absolute top-0 left-0 bg-[#088e74]   h-full md:block hidden w-20"></div>
       <div className="flex flex-col lg:flex-row justify-between gap-1 lg:gap-10  py-10 lg:py-10">
         {/* Sidebar with Profile Images */}
-        <div className="flex flex-col items-start space-y-2 md:space-y-2  lg:py-8  lg:ml-20 p-4 xl:ml-52">
+        <div className="flex flex-col items-start space-y-2 md:space-y-6  lg:py-8  lg:ml-20 p-4 xl:ml-52">
           {profiles.map((profile, index) => (
             <motion.div
-              key={profile.id}
-              onClick={() => handleProfileClick(profile.id)}
-              className={`flex items-center cursor-pointer transition-all duration-300 w-full ${
-                activeProfile === profile.id ? "opacity-100" : "opacity-50"
-              }`}
-              initial={{ opacity: 0, x: -50 }}
-              animate={{
-                opacity: activeProfile === profile.id ? 1 : 0.5,
-                x: 0,
-              }}
-              transition={{ duration: 0.5 }}
+            key={profile.id}
+            onMouseEnter={() => handleProfileClick(profile.id)} // Triggers on hover
+            className={`flex items-center cursor-pointer transition-all duration-300 w-full ${activeProfile === profile.id ? 'opacity-100' : 'opacity-50'}`}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: activeProfile === profile.id ? 1 : 0.5, x: 0 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ opacity: 1}}
             >
               {/* Alternate Layout: Image first or Name and Title first */}
               {index % 2 === 0 ? (

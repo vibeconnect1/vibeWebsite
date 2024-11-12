@@ -43,7 +43,7 @@ const VibePage4 = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#e9886e] via-[#e77b5c] to-[#dd5852] relative bottom-0">
+    <div className="min-h-screen bg-gradient-to-b from-[#e9886e]  to-[#de5b57] relative bottom-0">
       {/* Background overlay */}
       <div
         className="absolute inset-0 bg-no-repeat bg-cover"

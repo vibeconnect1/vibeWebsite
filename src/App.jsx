@@ -64,7 +64,7 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/home" element={<VibeConnect/>} />
+        <Route path="/home" element={<Layout/>} />
         <Route path="/" element={<Navigate to="/home" />} />
         <Route
           path="/Personal-Financial"
