@@ -162,7 +162,7 @@ const VibeConnectNavbar1 = () => {
                         exit="exit"
                         variants={dropdownVariants}
                       >
-                        <h3 className="font-bold text-base text-black sm:text-lg mb-2 border-b-2 w-64  border-gray-400">
+                        <h3 className="font-bold text-base md:text-lg text-black sm:text-lg mb-2 border-b-2 w-64  border-gray-400">
                           {section.title}
                         </h3>
 
@@ -170,7 +170,7 @@ const VibeConnectNavbar1 = () => {
                           {section.links.map((link) => (
                             <li
                               key={link.url}
-                              className="py-1   font-serif  hover:text-gray-800  leading-relaxed"
+                              className="py-1   font-serif text-base md:text-lg hover:text-gray-800  leading-relaxed"
                             >
                               <Link to={link.url}>{link.name}</Link>
                             </li>
@@ -183,9 +183,9 @@ const VibeConnectNavbar1 = () => {
               )}
             </AnimatePresence>
 
-            <div className="flex justify-between items-center px-8 py-1 z-20">
+            <div className="flex justify-between items-center mr-4 py-1 z-20">
               <h1
-                className={`text-xl font-sans font-bold ${textColor} ml-10 z-10 mt-3`}
+                className={`text-xl font-sans font-bold ${textColor}  md:ml-10 z-10 mt-3`}
               >
                 <Link to="/home">
                   {/* <div className=" z-50 absolute top-5 left-10 "> */}
@@ -217,7 +217,7 @@ const VibeConnectNavbar1 = () => {
                 <div className="md:flex gap-8 hidden p-2">
                   <div className="relative">
                     <button
-                      className={`font-bold flex ${textColor} items-center gap-2`}
+                      className={`font-bold flex ${textColor} text-base md:text-lg items-center gap-2`}
                       onClick={toggleDropdown}
                     >
                       Solutions
@@ -230,10 +230,10 @@ const VibeConnectNavbar1 = () => {
                       </span>
                     </button>
                   </div>
-                  <p className={`font-bold ${textColor} z-10`}>
+                  <p className={`font-bold ${textColor} text-base md:text-lg z-10`}>
                     <Link to="/AboutUs">About us</Link>
                   </p>
-                  <p className={`font-bold ${textColor} z-10`}>
+                  <p className={`font-bold ${textColor} text-base md:text-lg z-10`}>
                     <Link to="/Contact-us">Contact us</Link>
                   </p>
                 </div>
@@ -263,7 +263,7 @@ const VibeConnectNavbar1 = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="w-full px-4 sm:px-8 lg:px-24 py-6 lg:py-10  "
+                        className="w-full px-6 sm:px-8 lg:px-24 py-6 lg:py-10  mb-8"
                       >
                         {/* <button
                           onClick={openSignInModal}
@@ -282,16 +282,16 @@ const VibeConnectNavbar1 = () => {
                               exit="exit"
                               variants={dropdownVariants}
                             >
-                              <h3 className="font-bold text-sm font-serif mb-2">
+                              <h3 className="font-bold text-sm md:text-lg font-serif border-b-2 border-black w-64 mb-2">
                                 {section.title}
                               </h3>
                               <ul>
                                 {section.links.map((link) => (
                                   <li
                                     key={link.url}
-                                    className="py-1 font-serif text-sm mb-1 hover:text-gray-800"
+                                    className="py-1 font-serif text-sm md:text-lg  mb-1 hover:text-gray-800 leading-relaxed"
                                   >
-                                    <Link to={link.url}>{link.name}</Link>
+                                    <Link to={link.url} className="text-base md:text-lg">{link.name}</Link>
                                   </li>
                                 ))}
                               </ul>

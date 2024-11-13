@@ -11,6 +11,8 @@ import ringAnimation from "/ring.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import LogoSvg from "../../Logo/Logo.svg";
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+
 const dropdownVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (index) => ({
@@ -24,6 +26,12 @@ const dropdownVariants = {
 };
 
 const VibePage3 = () => {
+  const [openSectionIndex, setOpenSectionIndex] = useState(null);
+
+  const toggleSection = (index) => {
+    // If the section is already open, close it; otherwise, open the clicked section
+    setOpenSectionIndex(openSectionIndex === index ? null : index);
+  };
   const sections = [
     {
       title: "FINANCE",
@@ -135,27 +143,27 @@ const VibePage3 = () => {
       /> */}
 
       {/* Adobe Logo */}
-      <div className=" z-50 absolute top-5 left-10 ">
+      <div className=" z-50 absolute top-5 left-1 md:left-10 ">
         <img src={LogoSvg} alt="Logo" width="125" height="125" />
       </div>
 
       <div className="absolute top-5 right-4 md:right-10 ">
-        <div className="flex items-center space-x-6">
-          <button onClick={toggleDropdown} className="text-white font-semibold">
+        <div className="flex items-center gap-2 lg:space-x-6">
+          <button onClick={toggleDropdown} className="text-white text-base md:text-lg font-semibold">
             Solutions
           </button>
 
           <Link
             to="/AboutUs"
-            className="text-white font-semibold hidden md:inline"
+            className="text-white text-base md:text-lg font-semibold hidden md:inline"
           >
             About us
           </Link>
 
-          <Link to="/FAQ" className="text-white font-semibold hidden md:inline">
+          <Link to="/FAQ" className="text-white text-sm md:text-lg font-semibold hidden md:inline">
             FAQ
           </Link>
-          <Link to="/Contact-us" className="text-white font-semibold hidden md:inline">
+          <Link to="/Contact-us" className="text-white text-sm md:text-lg font-semibold hidden md:inline">
             Contact us
           </Link>
           {/* <Link to="" className="text-white font-semibold hidden md:inline">
@@ -178,46 +186,72 @@ const VibePage3 = () => {
       </div>
 
       <AnimatePresence>
-        {isDropdownOpen && (
-          <motion.div
-            ref={dropdownRef}
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.3 }}
-            className="absolute left-0 top-14 w-full px-4 sm:px-8 lg:px-20 py-6 lg:py-6  bg-white/85 z-40 border border-gray-200 shadow-lg"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {sections.map((section, index) => (
-                <motion.div
-                  key={section.title}
-                  custom={index}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  variants={dropdownVariants}
+      {isDropdownOpen && (
+        <motion.div
+          ref={dropdownRef}
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.3 }}
+          className="absolute left-0 top-16 md:top-14 w-full px-8 py-6 lg:px-20 lg:py-6 bg-white/95 z-40 border border-gray-200 shadow-lg "
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 mb-12">
+            {sections.map((section, index) => (
+              <motion.div
+                key={section.title}
+                custom={index}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+              >
+                {/* Section Title with Toggle Button */}
+                <div
+                  className={`flex items-center justify-between cursor-pointer mb-2 border-b-2 border-black ${
+                    openSectionIndex === index ? '' : 'md:border-b-2 border-black'
+                  }`}
+                  onClick={() => toggleSection(index)}
                 >
-                  <h3 className="font-bold text-base text-black sm:text-lg mb-2 border-b-2 w-64  border-gray-400">
+                  <h3 className="font-bold text-base md:text-lg text-black ">
                     {section.title}
                   </h3>
+                  {/* Chevron Icons (only for small screens) */}
+                  <span className="md:hidden">
+                    {openSectionIndex === index ? (
+                      <FaChevronUp className="ml-2 text-gray-700" />
+                    ) : (
+                      <FaChevronDown className="ml-2 text-gray-700" />
+                    )}
+                  </span>
+                </div>
 
-                  <ul>
-                    {section.links.map((link) => (
-                      <li
-                        key={link.url}
-                        className="py-1   font-serif  hover:text-gray-800  leading-relaxed"
-                      >
-                        <Link to={link.url}>{link.name}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
+                {/* Conditional Rendering of Links */}
+                <ul className={`${openSectionIndex === index ? 'block' : 'hidden'} md:block space-y-1`}>
+                  {section.links.map((link) => (
+                    <li
+                      key={link.url}
+                      className="py-1 font-serif text-sm md:text-lg hover:text-gray-800 leading-relaxed"
+                    >
+                      <Link to={link.url} className="text-base md:text-lg">
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+             <Link
+            to="/AboutUs"
+            className="font-bold text-base md:text-xl mb-1 text-black md:hidden md:inline"
+          >
+            About us
+          </Link>
+            <Link to="/Contact-us" className="font-bold text-base md:text-xl text-black  md:hidden md:inline">
+            Contact us
+          </Link>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
       {/* Text content */}
       <div
         ref={ref}
