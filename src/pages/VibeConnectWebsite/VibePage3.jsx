@@ -241,11 +241,11 @@ const VibePage3 = () => {
             ))}
              <Link
             to="/AboutUs"
-            className="font-bold text-base md:text-xl mb-1 text-black md:hidden md:inline"
+            className="font-bold text-base md:text-xl mb-1 text-black  md:inline"
           >
             About us
           </Link>
-            <Link to="/Contact-us" className="font-bold text-base md:text-xl text-black  md:hidden md:inline">
+            <Link to="/Contact-us" className="font-bold text-base md:text-xl text-black   md:inline">
             Contact us
           </Link>
           </div>
